@@ -3,11 +3,11 @@ version: '3.7'
 services:
   app_proxy:
     environment:
-      APP_HOST: denny-docmost_web_1
+      APP_HOST: jordanm88-docmost_web_1
       APP_PORT: 3000
 
   web:
-    image: docmost/docmost:0.20.4@sha256:f16f2a69425de9e0d026b00b4d1b3416b2b75ffa24003d43d6a181d76c52a352
+    image: docmost/docmost:0.21
     depends_on:
       - db
       - redis

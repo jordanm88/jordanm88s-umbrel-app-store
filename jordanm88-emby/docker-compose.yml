@@ -3,13 +3,13 @@ version: '3.7'
 services:
   app_proxy:
     environment:
-      APP_HOST: denny-emby_server_1
+      APP_HOST: jordanm88-emby_server_1
       APP_PORT: 8096
 
   server:
     image: emby/embyserver:4.9.1.0@sha256:dfe2866d411fe6de66dad1c6aa756bfbff39a6549e79549b6d335f43da6c6dc8
     environment:
-      TZ: Europe/Berlin
+      TZ: Europe/London
       UID: 1000
       GID: 1000
     restart: on-failure
