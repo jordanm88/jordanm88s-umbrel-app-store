@@ -7,7 +7,7 @@ services:
       APP_PORT: 3000
 
   web:
-    image: docmost/docmost:0.21
+    image: docmost/docmost:0.21.0@sha256:1c8f3b2d4e5a6c7f9b1c5d3e4f8a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9
     depends_on:
       - db
       - redis
