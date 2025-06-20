@@ -7,7 +7,7 @@ services:
       APP_PORT: 3000
 
   server:
-    image: lscr.io/linuxserver/webtop:ubuntu-xfce
+    image: lscr.io/linuxserver/webtop:ubuntu-mate
     security_opt:
       - seccomp:unconfined
     restart: on-failure
