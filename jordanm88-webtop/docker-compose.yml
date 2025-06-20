@@ -7,7 +7,7 @@ services:
       APP_PORT: 3000
 
   web:
-    image: linuxserver/webtop:latest
+    image: linuxserver/webtop::ubuntu-mate-version-04d8319c@sha256:4253dfc8a1ea240cb6a63a939a26471f549e4a0046f239a9a020d52d78c32558
     restart: on-failure
     security_opt:
       - seccomp:unconfined 
