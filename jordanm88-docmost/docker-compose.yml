@@ -7,7 +7,7 @@ services:
       APP_PORT: 3000
 
   web:
-    image: docmost/docmost:latest
+    image: docmost/docmost:0.21.0
     depends_on:
       - db
       - redis
