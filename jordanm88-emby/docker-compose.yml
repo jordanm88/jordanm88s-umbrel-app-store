@@ -18,3 +18,4 @@ services:
       - ${APP_DATA_DIR}/data/tvshows:/tvshows:rw
       - ${APP_DATA_DIR}/data/music:/music:rw
       - ${APP_DATA_DIR}/data/movies:/movies:rw
+      - /mnt/storage:/storage:rw
