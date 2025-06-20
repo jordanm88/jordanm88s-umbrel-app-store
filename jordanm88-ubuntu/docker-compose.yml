@@ -19,5 +19,5 @@ services:
       - CUSTOM_USER=admin
     volumes:
       - ${APP_DATA_DIR}/data/config:/config
-      #- /mnt/storage:/storage:rw
+      - /mnt/storage:/storage:rw
     shm_size: "4gb"
