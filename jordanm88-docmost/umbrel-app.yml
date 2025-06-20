@@ -40,7 +40,7 @@ gallery:
   - https://i.imgur.com/UfmtSdM.png
   - https://i.imgur.com/HNeYoSD.png
 releaseNotes: >-
-  This update introduces the ability to copy pages to different spaces, improves handling of SSO URL casing, and fixes previously unhandled exceptions.
+  See changelog here; https://github.com/docmost/docmost/releases/tag/v0.21.0
 dependencies:
 path: ""
 defaultUsername: ""
