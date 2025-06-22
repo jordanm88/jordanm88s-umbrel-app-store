@@ -7,7 +7,7 @@ services:
       APP_PORT: 8096
 
   server:
-    image: emby/embyserver:4.9.1.0@sha256:dfe2866d411fe6de66dad1c6aa756bfbff39a6549e79549b6d335f43da6c6dc8
+    image: emby/embyserver:4.8.11.0
     environment:
       TZ: Europe/London
       UID: 1000
