@@ -1,0 +1,24 @@
+manifestVersion: 1
+id: jordanm88-tvheadend
+name: TV Headend
+tagline: Your personal TV streaming server
+icon: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.nXYvzuUr3q7QGXNvbe5UkwHaD4%26r%3D0%26pid%3DApi&f=1&ipt=2827d7b678afcfc859dca21f9cfd9a8288a911efe0eab13a9b95fef845e50b48&ipo=images
+category: media
+version: "1.79.119-ls1"
+port: 9981
+description: >-
+  ▶️ Coming soon...
+developer: TV Headend
+website: https://docs.linuxserver.io/images/docker-tvheadend
+submitter: jordanm88
+submission: https://github.com/getumbrel/umbrel-apps/pull/
+repo: https://github.com/jordanm88
+support: https://github.com/jordanm88
+gallery:
+  - https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.nXYvzuUr3q7QGXNvbe5UkwHaD4%26r%3D0%26pid%3DApi&f=1&ipt=2827d7b678afcfc859dca21f9cfd9a8288a911efe0eab13a9b95fef845e50b48&ipo=images
+releaseNotes: >-
+  To follow...
+dependencies:
+path: ""
+defaultUsername: ""
+defaultPassword: ""

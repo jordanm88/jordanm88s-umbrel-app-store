@@ -1,0 +1,20 @@
+---
+version: '3.7'
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: jordanm88_tvheadend_web_1
+      APP_PORT: 9981
+
+server:
+    image: ghcr.io/linuxserver/brave:1.79.119-ls1
+    environment:
+      TZ: Europe/London
+      PUID: 1000
+      PGID: 1000
+      TZ: Europe/London
+    restart: on-failure
+    volumes:
+      - ${APP_DATA_DIR}/data:/config:rw
+      - ${APP_DATA_DIR}/recordings:/recordings:rw
