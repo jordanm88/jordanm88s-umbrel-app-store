@@ -39,7 +39,7 @@ releaseNotes: >-
   
 * Fix conversion job regression in previous build
 
-Cumulative changes since stable release:
+Cumulative changes since stable release
 * Improve library scan performance
 * Improve live tv guide refresh performance
 * Improve database performance
