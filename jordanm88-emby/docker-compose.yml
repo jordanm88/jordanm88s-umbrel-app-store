@@ -7,7 +7,7 @@ services:
       APP_PORT: 8096
 
   server:
-    image: emby/embyserver:4.8.11.0
+    image: emby/embyserver:4.9.1.7-beta
     environment:
       TZ: Europe/London
       UID: 1000
@@ -18,4 +18,4 @@ services:
       - ${APP_DATA_DIR}/data/tvshows:/tvshows:rw
       - ${APP_DATA_DIR}/data/music:/music:rw
       - ${APP_DATA_DIR}/data/movies:/movies:rw
-      - ${APP_DATE_DIR}/mnt/storage:/storage:rw # This is a personal (External SMB) mount point, adjust as needed
+      - ${APP_DATE_DIR}/mnt/Media:/Media:rw # This is a personal (External SMB) mount point, adjust as needed
