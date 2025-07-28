@@ -35,7 +35,7 @@ gallery:
   - https://i.imgur.com/KcxHUAu.png
   - https://i.imgur.com/xGyIp5c.png
 releaseNotes: >-
-  This Emby version introduces numerous enhancements and fixes, as noted on their changelog here https://github.com/MediaBrowser/Emby.Releases/releases/tag/4.8.11.0
+  This Emby version introduces numerous enhancements and fixes, as noted on their changelog here https://github.com/MediaBrowser/Emby.Releases/releases/tag/4.9.1.11-beta
 dependencies:
 path: ""
 defaultUsername: ""
