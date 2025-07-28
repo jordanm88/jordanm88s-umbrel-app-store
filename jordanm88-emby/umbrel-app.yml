@@ -4,7 +4,7 @@ name: Emby
 tagline: A personal media server
 icon: https://i.imgur.com/OfOArez.png
 category: media
-version: "4.8.11.0"
+version: "4.9.1.11-beta"
 port: 8096
 description: >-
   ▶️ Emby is a powerful media server software designed to help users manage, stream, and enjoy their personal collection of movies, TV shows, music, photos, and home videos across a wide range of devices. It acts as a central hub for all your digital media, automatically organizing content and enriching it with metadata like cover art, descriptions, and ratings. Emby provides a clean and intuitive interface that allows users to easily browse and play their media, whether they are at home or on the go.
