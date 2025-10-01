@@ -1,0 +1,24 @@
+version: '3.7'
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: jordanm88-desktop_web_1
+      APP_PORT: 7777
+
+  web:
+    image: kasmweb/desktop:1.17.0-rolling-weekly
+    restart: on-failure
+    security_opt:
+      - seccomp:unconfined 
+    shm_size: "4gb" 
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/London
+      - CUSTOM_USER=admin
+      - PASSWORD=changeme
+    volumes:
+      - ${APP_DATA_DIR}/data/config:/config:rw
+      - /var/run/docker.sock:/var/run/docker.sock
+
