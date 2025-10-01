@@ -5,18 +5,18 @@ tagline: An easy-to-use desktop that brings the power of Ubuntu to your fingerti
 icon: https://i.imgur.com/OspDvGc.png
 category: files & productivity
 version: "04d8319c"
-port: 7777
+port: 6901
 description: >-
   To be confirmed...
 
 developer: Kasm Technologies
-website: 
+website: TBC
 submitter: jordanm88
 submission: https://github.com/getumbrel/umbrel-apps/
 repo: https://github.com/
 support: https://github.com/
 gallery:
-  - 
+  - TBC
 releaseNotes: >-
   To be confirmed...
 dependencies:
