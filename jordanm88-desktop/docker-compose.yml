@@ -8,7 +8,9 @@ services:
 
   web:
     image: kasmweb/desktop:1.17.0-rolling-weekly
-    restart: on-failure
+    restart: on-failure  
+  environment:
+      - VNC_PW: kasm
     
     volumes:
       - ${APP_DATA_DIR}/data/config:/config:rw
