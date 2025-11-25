@@ -2,7 +2,7 @@ manifestVersion: 1
 id: jordanm88-stalwart
 name: Stalwart
 tagline: An all-in-one Mail & Collaboration server
-icon: https://raw.githubusercontent.com/dennysubke/dennys-umbrel-app-gallery/main/denny-stalwart/logo.png
+icon: https://stalw.art/img/logo-dark.png
 category: networking
 version: "0.13.0"
 port: 18080
