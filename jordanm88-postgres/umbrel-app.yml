@@ -1,0 +1,35 @@
+manifestVersion: 1
+id: jordanm88-postgres
+name: Postgresql DB
+tagline: JordanM88 Postgresql Database
+icon:  https://www.postgresql.org/media/img/about/press/elephant.png
+category: Database
+version: "17.7"
+port: 5432
+description: >-
+  PostgreSQL Database
+  
+  defaultUsername: "admin"         
+  defaultPassword: "P@ssw0rd"
+  
+  You can change the postgres password from CLI with:
+  
+    set +H
+    sudo docker exec -it jordanm88-postgres psql -U admin -d master -c "ALTER USER admin WITH PASSWORD 'your_new_password';"
+    set -H
+
+developer: PostgreSQL
+website: https://www.postgresql.org/
+submitter: JordanM88
+submission: https://github.com/jordanm88/jordanm88s-umbrel-app-store.git
+repo: postgres:17
+support: https://github.com/jordanm88/jordanm88s-umbrel-app-store/issues
+gallery:
+  - https://www.postgresql.org/media/img/misc/banner.jpg
+  - https://www.postgresql.org/media/img/about/press/elephant.png
+releaseNotes: >-
+  https://www.postgresql.org/docs/17/release-17-7.html
+dependencies: []
+path: ""
+defaultUsername: "admin"
+defaultPassword: "P@ssw0rd"

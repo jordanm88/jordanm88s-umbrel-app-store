@@ -1,0 +1,19 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: jordanm88-postgres
+    restart: unless-stopped
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+    ports:
+      - '5432:5432'
+    environment:
+      APP_HOST: jordanm88-postgres_1
+      APP_PORT: 5432
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: P@ssw0rd
+      POSTGRES_DB: master
+    volumes:
+      - /home/umbrel/umbrel/app-data/jordanm88-postgres/data:/var/lib/postgresql/data

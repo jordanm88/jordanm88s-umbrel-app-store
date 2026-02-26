@@ -1,0 +1,33 @@
+manifestVersion: 1
+id: jordanm88-pgadmin
+name: pgAdmin
+tagline: JordanM88 pgAdmin SQL Viewer
+icon:  https://www.pgadmin.org/static/COMPILED/assets/img/postgres-alt.svg
+category: Database
+version: "9.11"
+port: 81
+description: >-
+  Maintainer: pgAdmin Development Team
+
+    A Docker Container containing pgAdmin running in server mode over HTTP or HTTPS is available at Docker Hub. 
+    
+    Reset default password with following CLI command:
+    
+    set +H
+    sudo docker exec -it jordanm88-pgadmin /venv/bin/python3 /pgadmin4/setup.py update-user admin@admin.com --password 'YourNewPassword' --admin
+    set -H
+
+developer: pgAdmin
+website: https://www.pgadmin.org/
+submitter: JordanM88
+submission: https://github.com/jordanm88/jordanm88s-umbrel-app-store.git
+repo: postgres:17
+support: https://github.com/jordanm88/jordanm88s-umbrel-app-store/issues
+gallery:
+  - https://www.pgadmin.org/static/COMPILED/assets/img/screenshot.webp
+releaseNotes: >-
+  https://www.pgadmin.org/docs/pgadmin4/9.11/index.html
+dependencies: []
+path: ""
+defaultUsername: "admin@admin.com"
+defaultPassword: "P@ssw0rd"

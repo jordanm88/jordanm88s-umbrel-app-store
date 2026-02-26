@@ -1,12 +1,12 @@
 services:
-  windows:
-    image: dockurr/windows
-    container_name: jordanm88-winsvr2025
+  macos:
+    image: dockurr/macos
+    container_name: jordanm88-mac14
     environment:
-      VERSION: "11"
+      VERSION: "14"
       RAM_SIZE: "8G"
       CPU_CORES: "4"
-      DISK_SIZE: "120G"
+      DISK_SIZE: "100G"
       
     devices:
       - /dev/kvm
@@ -18,6 +18,6 @@ services:
       - 3389:3389/tcp
       - 3389:3389/udp
     volumes:
-      - /home/umbrel/umbrel/app-data/jordanm88-win2025/data:/storage
+      - /home/umbrel/umbrel/app-data/jordanm88-mac14/data:/storage
     restart: unless-stopped
     stop_grace_period: 2m
