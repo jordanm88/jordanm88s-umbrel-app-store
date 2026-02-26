@@ -1,0 +1,36 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: cybershield_server_1
+      APP_PORT: 8000
+
+  server:
+    image: ghcr.io/jordanm88/cybershield:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: on-failure
+    ports:
+      - "${APP_CYBERSHIELD_PORT:-8000}:8000"
+    environment:
+      NODE_ENV: production
+      PORT: 8000
+      # ── Required ──────────────────────────────────────────
+      BUNNY_LIBSQL_URL: ${APP_CYBERSHIELD_BUNNY_LIBSQL_URL:-}
+      BUNNY_LIBSQL_AUTH_TOKEN: ${APP_CYBERSHIELD_BUNNY_LIBSQL_AUTH_TOKEN:-}
+      ENCRYPTION_KEY: ${APP_CYBERSHIELD_ENCRYPTION_KEY:-}
+      # ── Optional ──────────────────────────────────────────
+      ALLOWED_ORIGIN: ${APP_CYBERSHIELD_ALLOWED_ORIGIN:-}
+      BUNNY_FTP_HOST: ${APP_CYBERSHIELD_BUNNY_FTP_HOST:-}
+      BUNNY_FTP_USER: ${APP_CYBERSHIELD_BUNNY_FTP_USER:-}
+      BUNNY_FTP_PASSWORD: ${APP_CYBERSHIELD_BUNNY_FTP_PASSWORD:-}
+    volumes:
+      - ${APP_DATA_DIR}/data:/app/data
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://localhost:8000/health').then(r=>{if(!r.ok)throw 1}).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 5s
+      start_period: 15s
+      retries: 3

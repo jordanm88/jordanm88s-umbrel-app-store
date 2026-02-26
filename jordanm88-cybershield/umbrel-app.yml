@@ -1,0 +1,35 @@
+manifestVersion: 1
+id: cybershield
+name: CyberShield
+version: "1.2.45"
+category: networking
+tagline: Security risk assessment and web scanning platform
+icon: https://raw.githubusercontent.com/jordanm88/cybershield/main/public/cybershield-icon.svg
+description: >-
+  CyberShield is a comprehensive web security scanning platform that analyses
+  websites for SSL/TLS configuration, security headers, cookie security, CDN
+  usage, email authentication (SPF, DMARC, DKIM), and DNS configuration.
+
+
+  Features include exportable PDF reports, scan history, AI-powered business
+  overviews, two-factor authentication, and a modern dashboard built with
+  React and shadcn/ui.
+
+
+  The first user to sign up becomes the admin.
+developer: jordanm88
+website: https://github.com/jordanm88/cybershield
+repo: https://github.com/jordanm88/cybershield
+support: https://github.com/jordanm88/cybershield/issues
+port: 8000
+submitter: jordanm88
+submission: https://github.com/jordanm88/cybershield
+gallery:
+  - https://raw.githubusercontent.com/jordanm88/cybershield/main/public/gallery-1.png
+  - https://raw.githubusercontent.com/jordanm88/cybershield/main/public/gallery-2.png
+  - https://raw.githubusercontent.com/jordanm88/cybershield/main/public/gallery-3.png
+releaseNotes: >-
+  Initial Umbrel release. Includes full security scanning, PDF reports, scan
+  history, AI business overview, 2FA, and admin panel.
+dependencies: []
+path: ""
