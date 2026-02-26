@@ -1,14 +1,16 @@
 manifestVersion: 1
 id: jordanm88-firefox
-name: firefox
+name: Firefox
 tagline: JordanM88's Firefox Container
 icon:  https://upload.wikimedia.org/wikipedia/commons/a/a0/Firefox_logo%2C_2019.svg
 category: Browser
-version: "25.12.5"
+version: "26.02.3"
 port: 5800
 description: >-
   Maintainer: https://hub.docker.com/r/jlesage/firefox
 
+   Orinally was installed version 25.12.5, but it is now updated to the latest version of Firefox.
+   
    This project provides a Docker container for Firefox.
 
     The graphical user interface (GUI) of the application can be accessed through a modern web browser,
