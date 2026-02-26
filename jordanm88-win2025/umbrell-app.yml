@@ -1,0 +1,48 @@
+manifestVersion: 1
+id: jordanm88-win2025
+name: win2025
+tagline: JordanM88 Windows Server 2025
+icon:  https://www.clipartmax.com/png/middle/240-2405555_windows-server-logo-png.png
+category: OS
+version: "2025"
+port: 8006
+description: >-
+  Maintainer: https://github.com/dockur/windows
+
+    A Docker Container containing Windows 2025 Server
+    
+    How do I use it?
+    
+    Very simple! These are the steps:
+
+    Start the container and connect to port 8006 using your web browser.
+
+    Sit back and relax while the magic happens, the whole installation will be performed fully automatic.
+
+    Once you see the desktop, your Windows installation is ready for use.
+
+    Enjoy your brand new machine, and don't forget to star this repo!
+    
+    Select version
+    
+    Value	Version	                Size:
+    11      Windows 11 Pro	        7.2 GB
+    11e     Windows 11 Enterprise	6.6 GB
+    2025	Windows Server 2025	    6.7 GB
+    2022	Windows Server 2022	    6.0 GB
+    
+    NOTE:  This version is currently only supported on UmbrelOS X86-64 hardware.  It will, currently, not work on ARM64 Hardware!
+
+developer: Microsoft
+website: https://github.com/dockur/windows
+submitter: jordanm88
+submission: https://github.com/jordanm88/jordanm88s-umbrel-app-store.git
+repo: dockurr/windows
+support: https://github.com/jordanm88/jordanm88s-umbrel-app-store/issues
+gallery:
+  - https://repository-images.githubusercontent.com/743140652/69c0c16a-9695-484e-861e-9b07c0507f45
+  - https://camo.githubusercontent.com/726bc70a41ea21d9cad6fe5912341ec6e84de148c4deacedc8b70476a59e27f8/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f786847596f6275473530382f302e6a7067
+releaseNotes: >-
+  https://github.com/dockur/windows?tab=readme-ov-file
+dependencies: []
+path: ""
