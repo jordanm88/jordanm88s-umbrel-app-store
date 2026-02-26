@@ -1,7 +1,7 @@
 manifestVersion: 1
 id: jordanm88-firefox
 name: firefox
-tagline: JordanM88 Firefox Container
+tagline: JordanM88's Firefox Container
 icon:  https://upload.wikimedia.org/wikipedia/commons/a/a0/Firefox_logo%2C_2019.svg
 category: Browser
 version: "25.12.5"
