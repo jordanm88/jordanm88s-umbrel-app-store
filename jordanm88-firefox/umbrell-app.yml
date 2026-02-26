@@ -1,0 +1,31 @@
+manifestVersion: 1
+id: jordanm88-firefox
+name: firefox
+tagline: JordanM88 Firefox Container
+icon:  https://upload.wikimedia.org/wikipedia/commons/a/a0/Firefox_logo%2C_2019.svg
+category: Browser
+version: "25.12.5"
+port: 5800
+description: >-
+  Maintainer: https://hub.docker.com/r/jlesage/firefox
+
+   This project provides a Docker container for Firefox.
+
+    The graphical user interface (GUI) of the application can be accessed through a modern web browser,
+    requiring no installation or configuration on the client side, or via any VNC client.
+    
+    NOTE:  This version is currently only supported on UmbrelOS X86-64 hardware.  It will, currently, not work on ARM64 Hardware!
+    
+
+developer: jlesage/docker-firefox
+website: https://github.com/jlesage/docker-firefox
+submitter: jordanm88
+submission: https://github.com/jordanm88/jordanm88s-umbrel-app-store.git
+repo: dockurr/windows
+support: https://github.com/jordanm88/jordanm88s-umbrel-app-store/issues
+gallery:
+  - https://upload.wikimedia.org/wikipedia/commons/a/a0/Firefox_logo%2C_2019.svg
+releaseNotes: >-
+   https://github.com/jlesage/docker-firefox
+dependencies: []
+path: ""
