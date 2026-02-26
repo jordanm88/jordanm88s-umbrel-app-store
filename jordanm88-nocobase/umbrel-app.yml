@@ -1,0 +1,24 @@
+manifestVersion: 1
+id: jordanm88-nocobase
+name: NocoBase
+tagline: Extensible AI-powered no-code platform
+icon: https://raw.githubusercontent.com/eliboom/my-umbrel-store/master/icons/droopie-nocobase.svg
+category: Business
+version: "1.0.0"
+port: 13000
+description: >-
+  NocoBase is a scalability-first, open-source no-code/low-code platform that allows you to easily 
+  build enterprise applications and internal tools.
+developer: NocoBase
+website: https://nocobase.com
+submitter: jordanm88
+submission: https://github.com/nocobase/nocobase
+repo: https://github.com/nocobase/nocobase
+support: https://github.com/nocobase/nocobase/issues
+gallery: []
+releaseNotes: >-
+  Initial release.
+dependencies: []
+path: ""
+defaultUsername: "admin@nocobase.com"
+defaultPassword: "admin"
