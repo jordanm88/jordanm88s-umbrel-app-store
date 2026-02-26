@@ -1,10 +1,10 @@
 manifestVersion: 1
 id: jordanm88-win2025
-name: win2025
-tagline: JordanM88 Windows Server 2025
-icon:  https://www.clipartmax.com/png/middle/240-2405555_windows-server-logo-png.png
+name: Windows 11 2025
+tagline: JordanM88's Windows 11 2025
+icon:  https://images-jm.b-cdn.net/images/Windows11Laptop-1.webp
 category: OS
-version: "2025"
+version: "11"
 port: 8006
 description: >-
   Maintainer: https://github.com/dockur/windows
