@@ -16,7 +16,7 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Europe/London
-      - CUSTOM_USER=abc
+      - CUSTOM_USER=ubuntu
       - PASSWORD=changeme
     volumes:
       - ${APP_DATA_DIR}/data/config:/config:rw
