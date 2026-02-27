@@ -1,9 +1,8 @@
 manifestVersion: 1
 id: jordanm88-baserow
-category: Data, New
+category: Database
 name: Baserow
 version: "2.1.1"
-icon: https://baserow.io/_nuxt/logo.BcbZIPi5.svg
 tagline: Baserow
 description: >-
   Create your own online database without technical experience. Our user-friendly no-code tool gives you the powers of a developer without leaving your browser. 
@@ -16,9 +15,10 @@ repo: TBC
 support: TBC
 port: 10009
 gallery:
-  - https://baserow.io/_nuxt/logo.BcbZIPi5.svg
+  - https://cdn.jsdelivr.net/gh/selfhst/icons/png/baserow.png
 path: ""
 defaultUsername: ""
 defaultPassword: ""
+icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/baserow.png
 submitter: jordanm88
 submission: https://github.com/jordanm88s-umbrel-app-store/pull/
