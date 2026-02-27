@@ -46,3 +46,4 @@ releaseNotes: >-
   https://github.com/dockur/windows?tab=readme-ov-file
 dependencies: []
 path: ""
+disabled: true

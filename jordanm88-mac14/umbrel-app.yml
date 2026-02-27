@@ -47,3 +47,4 @@ releaseNotes: >-
   https://github.com/dockur/macos?tab=readme-ov-file#faq-
 dependencies: []
 path: ""
+disabled: true
