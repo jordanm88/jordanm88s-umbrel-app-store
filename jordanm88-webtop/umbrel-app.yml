@@ -1,19 +1,19 @@
 manifestVersion: 1
 id: jordanm88-webtop
-name: Ubuntu Mate
+name: Ubuntu KDE
 tagline: An easy-to-use desktop that brings the power of Ubuntu to your fingertips
-icon: https://i.imgur.com/OspDvGc.png
+icon: https://images-jm.b-cdn.net/images/Ubuntu-Emblem-3429816751.png
 category: files & productivity
-version: "04d8319c"
+version: "df170c95"
 port: 3399
 description: >-
-  💻 Webtop is an innovative open-source platform that enables users to access a fully functional Linux desktop environment directly through a web browser, eliminating the need for additional remote desktop tools like VNC or RDP. It is particularly well-suited for remote work, server management, and development tasks, offering a seamless and intuitive desktop experience from anywhere. For Umbrel users, this distribution is built around Ubuntu Mate, a robust and lightweight desktop environment known for its simplicity, speed, and user-friendly design.
+  💻 Webtop is an innovative open-source platform that enables users to access a fully functional Linux desktop environment directly through a web browser, eliminating the need for additional remote desktop tools like VNC or RDP. It is particularly well-suited for remote work, server management, and development tasks, offering a seamless and intuitive desktop experience from anywhere. For Umbrel users, this distribution is built around Ubuntu KDE, a robust and lightweight desktop environment known for its simplicity, speed, and user-friendly design.
 
 
-  Ubuntu Mate brings a perfect balance of modern functionality and efficient resource usage, making it an excellent choice for server environments where performance and reliability are critical. Its clean interface and extensive customization options allow users to tailor the experience to their needs, while its compatibility with a vast array of Linux applications ensures versatility. By integrating Ubuntu Mate into Webtop, this distribution for Umbrel delivers a smooth, responsive, and visually appealing desktop experience, accessible with nothing more than a web browser.
+  Ubuntu KDE brings a perfect balance of modern functionality and efficient resource usage, making it an excellent choice for server environments where performance and reliability are critical. Its clean interface and extensive customization options allow users to tailor the experience to their needs, while its compatibility with a vast array of Linux applications ensures versatility. By integrating Ubuntu KDE into Webtop, this distribution for Umbrel delivers a smooth, responsive, and visually appealing desktop experience, accessible with nothing more than a web browser.
 
 
-  Whether you’re coding, managing servers, testing applications, or simply looking for a cloud-based Linux desktop, Webtop with Ubuntu Mate provides an all-in-one solution that is powerful, lightweight, and easy to use.
+  Whether you’re coding, managing servers, testing applications, or simply looking for a cloud-based Linux desktop, Webtop with Ubuntu KDE provides an all-in-one solution that is powerful, lightweight, and easy to use.
 
 
   ⚠️ Please note that the installation process may take some time depending on the specifications and performance of your device, as the image file is over 1GB in size. Due to the large size, the system may require additional time to download, extract, and set up. Additionally, a 4GB shared memory (SHM) size has been configured to ensure optimal performance during installation and operation. It is recommended to be patient and allow the installation to complete fully. 
