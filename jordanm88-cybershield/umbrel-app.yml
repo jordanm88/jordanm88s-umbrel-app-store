@@ -2,7 +2,7 @@ manifestVersion: 1
 id: jordanm88-cybershield
 name: CyberShield
 version: "1.2.45"
-category: networking
+category: pending
 tagline: Security risk assessment and web scanning platform
 icon: https://raw.githubusercontent.com/jordanm88/cybershield/main/public/cybershield-icon.svg
 description: >-

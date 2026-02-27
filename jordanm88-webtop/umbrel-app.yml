@@ -40,3 +40,4 @@ dependencies:
 path: ""
 defaultUsername: ""
 defaultPassword: ""
+disabled: true
