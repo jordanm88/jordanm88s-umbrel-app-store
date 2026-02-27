@@ -33,3 +33,4 @@ releaseNotes: >-
   history, AI business overview, 2FA, and admin panel.
 dependencies: []
 path: ""
+disabled: true

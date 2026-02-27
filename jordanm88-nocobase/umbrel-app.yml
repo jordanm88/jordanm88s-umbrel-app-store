@@ -22,3 +22,4 @@ dependencies: []
 path: ""
 defaultUsername: "admin@nocobase.com"
 defaultPassword: "admin"
+disabled: true
