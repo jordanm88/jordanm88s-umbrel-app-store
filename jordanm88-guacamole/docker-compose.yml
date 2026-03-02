@@ -24,7 +24,7 @@ services:
       - GUACD_HOSTNAME=guacd
       - MYSQL_HOSTNAME=mysql
       - MYSQL_DATABASE=guacamole_db
-      - MYSQL_USER=guacamole_user
+      - MYSQL_USERNAME=guacamole_user
       - MYSQL_PASSWORD=_GbFX5\l/X*D)6|P}@P0l88a@=hP)]eR
   # mysql service configuration
   mysql:
@@ -34,7 +34,7 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=_GbFX5\l/X*D)6|P}@P0l88a@=hP)]eR
       - MYSQL_DATABASE=guacamole_db
-      - MYSQL_USER=guacamole_user
+      - MYSQL_USERNAME=guacamole_user
       - MYSQL_PASSWORD=_GbFX5\l/X*D)6|P}@P0l88a@=hP)]eR
     # Volume mapping for persistent storage
     volumes:
