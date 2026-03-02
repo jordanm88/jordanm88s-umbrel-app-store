@@ -1,5 +1,5 @@
 manifestVersion: 1
-id: jordanm88-umbrel-guacamole
+id: jordanm88-guacamole
 category: Remote Desktop
 name: Guacamole
 version: "1.6.0"
