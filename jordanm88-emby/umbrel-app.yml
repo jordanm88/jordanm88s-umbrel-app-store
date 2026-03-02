@@ -2,7 +2,7 @@ manifestVersion: 1
 id: jordanm88-emby
 name: Emby
 tagline: A personal media server
-icon: https://i.imgur.com/OfOArez.png
+icon: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.JKQcWsC8ebmED9CE6D8nyQHaHa%3Fpid%3DApi&f=1&ipt=54179d5ecc93e6e16e91d109df9e895e3b4cdfd52d697b192894f1e0824f459a&ipo=images
 category: media
 version: "4.8.11.0"
 port: 8096
@@ -27,13 +27,7 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/MediaBrowser/Emby
 support: https://github.com/MediaBrowser/Emby/issues
 gallery:
-  - https://i.imgur.com/Jx26bNJ.png
-  - https://i.imgur.com/vim3opE.png
-  - https://i.imgur.com/MB3tIss.png
-  - https://i.imgur.com/scM1EwK.png
-  - https://i.imgur.com/Uz60KZZ.png
-  - https://i.imgur.com/KcxHUAu.png
-  - https://i.imgur.com/xGyIp5c.png
+  - https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.JKQcWsC8ebmED9CE6D8nyQHaHa%3Fpid%3DApi&f=1&ipt=54179d5ecc93e6e16e91d109df9e895e3b4cdfd52d697b192894f1e0824f459a&ipo=images
 releaseNotes: >-
   This Emby version introduces numerous enhancements and fixes, as noted on their changelog here https://github.com/MediaBrowser/Emby.Releases/releases/tag/4.8.11.0
 dependencies:
