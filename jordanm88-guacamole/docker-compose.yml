@@ -1,0 +1,41 @@
+# Name of the configuration: jordanm88-guacamole
+version: "3.7"
+# Define the services required for the application
+services:
+  app_proxy:
+    environment:
+      APP_HOST: jordanm88-guacamole_app_1
+      APP_PORT: "8090"
+  # guacd service configuration
+  guacd:
+    # Docker image to use for this service
+    image: guacamole/guacd:1.6.0
+    # Restart policy for the container
+    restart: always
+  # app service configuration
+  app:
+    image: guacamole/guacamole:1.6.0
+    restart: always
+    # Link this service to the guacd service
+    links:
+      - guacd
+    # Environment variables for the app service
+    environment:
+      - GUACD_HOSTNAME=guacd
+      - MYSQL_HOSTNAME=mysql
+      - MYSQL_DATABASE=guacamole_db
+      - MYSQL_USER=guacamole_user
+      - MYSQL_PASSWORD=_GbFX5\l/X*D)6|P}@P0l88a@=hP)]eR
+  # mysql service configuration
+  mysql:
+    image: mysql:5.7
+    restart: always
+    # Environment variables for the MySQL service
+    environment:
+      - MYSQL_ROOT_PASSWORD=_GbFX5\l/X*D)6|P}@P0l88a@=hP)]eR
+      - MYSQL_DATABASE=guacamole_db
+      - MYSQL_USER=guacamole_user
+      - MYSQL_PASSWORD=_GbFX5\l/X*D)6|P}@P0l88a@=hP)]eR
+    # Volume mapping for persistent storage
+    volumes:
+      - ${APP_DATA_DIR}/mysql:/var/lib/mysql
