@@ -10,6 +10,7 @@ services:
 
   web:
     image: ghcr.io/jordanm88/insurance-crm:latest
+    container_name: jordanm88-insurancecrm
     restart: on-failure
     stop_grace_period: 1m
     volumes:
