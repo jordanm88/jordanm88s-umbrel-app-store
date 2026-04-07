@@ -1,0 +1,34 @@
+manifestVersion: 1
+id: jordanm88-insurancecrm
+category: crm
+name: Insurance CRM
+version: "1.31.0"
+tagline: Advanced insurance management and client relationship platform
+description: >-
+  A comprehensive, self-hosted insurance management CRM built for
+  brokers, underwriters, and insurance teams. Manage clients, policies,
+  claims, quotes, and renewals all in one place.
+
+  Features include team-based multi-tenancy with hierarchical teams,
+  role-based access control, automated policy expiration reminders,
+  workflow automation, cyber risk assessments, AI-powered document
+  analysis, encrypted data storage, and a full client portal.
+
+  Built with a modern React frontend and Express.js backend, the
+  system supports comprehensive audit trails, GDPR compliance tools,
+  and integrates with Companies House for business verification.
+  Everything runs locally on your Umbrel with a SQLite database —
+  no external services required.
+releaseNotes: ""
+developer: Jordan Mitchell
+website: https://github.com/jordanm88/insurance-crm
+dependencies: []
+repo: https://github.com/jordanm88/insurance-crm
+support: https://github.com/jordanm88/insurance-crm/issues
+port: 8420
+gallery: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: Jordan Mitchell
+submission: https://github.com/getumbrel/umbrel-apps/pull/0

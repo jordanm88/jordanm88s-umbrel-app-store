@@ -1,0 +1,23 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: insurance-crm_web_1
+      APP_PORT: 5000
+      # The app has its own authentication system
+      PROXY_AUTH_ADD: "false"
+
+  web:
+    image: ghcr.io/jordanm88/insurance-crm:latest
+    restart: on-failure
+    stop_grace_period: 1m
+    volumes:
+      - ${APP_DATA_DIR}/data:/app/data
+    environment:
+      NODE_ENV: production
+      PORT: 5000
+      DATABASE_URL: "file:/app/data/local.db"
+      SESSION_SECRET: "${APP_SEED}"
+      ENCRYPTION_KEY: "${APP_SEED:0:32}"
+      JWT_SECRET: "${APP_SEED}"
