@@ -3,7 +3,7 @@ version: '3.7'
 services:
   app_proxy:
     environment:
-      APP_HOST: jordanm88-insurancecrm_web_1
+      # APP_HOST: jordanm88-insurancecrm_web_1
       APP_PORT: 5000
       container_name: jordanm88-insurancecrm
       # The app has its own authentication system
