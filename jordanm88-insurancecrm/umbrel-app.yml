@@ -2,7 +2,7 @@ manifestVersion: 1
 id: jordanm88-insurancecrm
 category: files & productivity
 name: Insurance CRM
-version: "1.31.4"
+version: "1.31.9"
 tagline: Advanced insurance management and client relationship platform
 description: >-
   A comprehensive, self-hosted insurance management CRM built for
@@ -26,7 +26,9 @@ dependencies: []
 repo: https://github.com/jordanm88/insurance-crm
 support: https://github.com/jordanm88/insurance-crm/issues
 port: 8420
-gallery: []
+gallery: [
+  - https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.fidzBDqmGljFi6gqOzLaGAHaHa%3Fpid%3DApi&f=1&ipt=1e148ebe019962beb8753257f484f23115c98649ab5cc048de2dc09df8d3d733&ipo=images
+]
 path: ""
 defaultUsername: ""
 defaultPassword: ""
