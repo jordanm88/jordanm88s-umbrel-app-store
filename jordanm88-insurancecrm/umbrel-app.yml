@@ -26,7 +26,7 @@ website: https://github.com/jordanm88/insurance-crm
 dependencies: []
 repo: https://github.com/jordanm88/insurance-crm
 support: https://github.com/jordanm88/insurance-crm/issues
-port: 8420
+port: 5000
 gallery: 
   - https://images-jm.b-cdn.net/images/OIP-1531771989.jpg
 path: ""

@@ -20,6 +20,6 @@ services:
       - ${APP_DATA_DIR}/uploads:/app/uploads:rw
     environment:
       - NODE_ENV=production
-      - DOMAIN=http://${DEVICE_DOMAIN_NAME}:8420
+      - DOMAIN=http://$umbrel.local:8420
       - SESSION_SECRET=v9Zp8sTqU5dFV2LuY1nRrB6Tx3H6kAjD/Ly5QX0SjC4kB+zJfUw2HZ8Tj4PlNr1C
       - ENCRYPTION_KEY=91354942169d16a4e95695863e209cab2cce1e927a2df9e249d28b147135c2d1
