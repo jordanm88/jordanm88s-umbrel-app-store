@@ -21,7 +21,7 @@ website: https://github.com/jordanm88/landtable
 dependencies: []
 repo: https://github.com/jordanm88/landtable
 support: https://github.com/jordanm88/landtable/issues
-port: 3001
+port: 8000
 gallery: 
   - https://images-jm.b-cdn.net/images/introducing-landtable.png
 path: ""
