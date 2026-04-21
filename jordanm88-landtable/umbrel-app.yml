@@ -2,6 +2,7 @@ manifestVersion: 1
 id: jordanm88-landtable
 category: productivity
 name: Landtable
+icon: https://images-jm.b-cdn.net/images/favicon.svg
 version: "0.9.7"
 tagline: Self-hosted spreadsheet/database — your tables, your server
 description: >-
@@ -21,7 +22,8 @@ dependencies: []
 repo: https://github.com/jordanm88/landtable
 support: https://github.com/jordanm88/landtable/issues
 port: 3001
-gallery: []
+gallery: 
+  - https://images-jm.b-cdn.net/images/introducing-landtable.png
 path: ""
 defaultUsername: ""
 defaultPassword: ""
