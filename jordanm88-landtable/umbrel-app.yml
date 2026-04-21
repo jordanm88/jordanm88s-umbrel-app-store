@@ -1,24 +1,29 @@
 manifestVersion: 1
-id: jordanm88-landtable
-category: Database
-name: LandTable
+id: landtable
+category: productivity
+name: Landtable
 version: "0.9.7"
-tagline: LandTable is a no-code online database tool that empowers users to create and manage their own databases without any technical experience. With its user-friendly interface, LandTable allows you to organize and visualize your data in a way that suits your needs, all from your browser. Whether you're tracking projects, managing contacts, or organizing any kind of information, LandTable provides the flexibility and power of a developer without the need for coding skills.
+tagline: Self-hosted spreadsheet/database — your tables, your server
 description: >-
-  Create your own online database without technical experience. Our user-friendly no-code tool gives you the powers of a developer without leaving your browser. 
-releaseNotes: >-
-  This version includes various improvements and bug fixes.
-developer: jordanm88
-website: https://www.landtable.io
+  Landtable is a self-hosted spreadsheet-meets-database app: workspaces,
+  bases, tables, rich field types, formulas, views, charts, automations,
+  forms and more — running entirely on your own hardware with a local
+  SQLite database.
+
+  The first user to register is granted admin rights automatically.
+  All required secrets (JWT signing key, encryption-at-rest key) are
+  generated on first boot and persisted to the app's data volume so they
+  remain stable across container restarts.
+releaseNotes: ""
+developer: Jordan Mitchell
+website: https://github.com/jordanm88/landtable
 dependencies: []
 repo: https://github.com/jordanm88/landtable
-support: https://www.landtable.io
-port: 10009
-gallery:
-  - https://cdn.jsdelivr.net/gh/selfhst/icons/png/landtable.png
+support: https://github.com/jordanm88/landtable/issues
+port: 3001
+gallery: []
 path: ""
 defaultUsername: ""
 defaultPassword: ""
-icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/landtable.png
 submitter: jordanm88
-submission: https://github.com/jordanm88s-umbrel-app-store/pull/
+submission: https://github.com/jordanm88/landtable
