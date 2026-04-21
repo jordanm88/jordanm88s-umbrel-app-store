@@ -1,0 +1,17 @@
+# Configuration for jordanm88-landtable setup
+version: "3.7"
+# Service definitions for the jordanm88-landtable application
+services:
+  app_proxy:
+    environment:
+      APP_HOST: jordanm88-landtable_app_1
+      APP_PORT: "8000"
+  # Service name: app
+  app:
+    # Use the specified Docker image for LandTable and specify its version.
+    image: ghcr.io/jordanm88/landtable:next
+    # Set environment variables for LandTable.
+    environment:
+      
+    volumes:
+      - ${APP_DATA_DIR}/data:/data

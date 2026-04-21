@@ -1,0 +1,24 @@
+manifestVersion: 1
+id: jordanm88-landtable
+category: Database
+name: LandTable
+version: "0.9.7"
+tagline: LandTable is a no-code online database tool that empowers users to create and manage their own databases without any technical experience. With its user-friendly interface, LandTable allows you to organize and visualize your data in a way that suits your needs, all from your browser. Whether you're tracking projects, managing contacts, or organizing any kind of information, LandTable provides the flexibility and power of a developer without the need for coding skills.
+description: >-
+  Create your own online database without technical experience. Our user-friendly no-code tool gives you the powers of a developer without leaving your browser. 
+releaseNotes: >-
+  This version includes various improvements and bug fixes.
+developer: jordanm88
+website: https://www.landtable.io
+dependencies: []
+repo: https://github.com/jordanm88/landtable
+support: https://www.landtable.io
+port: 10009
+gallery:
+  - https://cdn.jsdelivr.net/gh/selfhst/icons/png/landtable.png
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/landtable.png
+submitter: jordanm88
+submission: https://github.com/jordanm88s-umbrel-app-store/pull/
