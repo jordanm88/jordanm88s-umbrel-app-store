@@ -4,7 +4,7 @@ category: finance
 name: Lia
 version: "0.1.0"
 tagline: Self-hosted insurance CRM for brokers and agents
-icon: https://images-jm.b-cdn.net/images/lia/icon.png
+icon: icon.png
 description: >-
   Lia is a comprehensive, self-hosted insurance management platform built for
   brokers, agents, and small teams. Manage your entire book of business from
@@ -50,9 +50,9 @@ repo: https://github.com/jordanm88/lia
 support: https://github.com/jordanm88/lia/issues
 port: 3546
 gallery:
-  - https://images-jm.b-cdn.net/images/lia/1.jpg
-  - https://images-jm.b-cdn.net/images/lia/2.jpg
-  - https://images-jm.b-cdn.net/images/lia/3.jpg
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
 path: ""
 defaultUsername: ""
 defaultPassword: ""
