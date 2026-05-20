@@ -1,0 +1,57 @@
+manifestVersion: 1
+id: jordanm88-lia
+category: data
+name: Lia
+version: "0.1.0"
+tagline: Self-hosted insurance CRM for brokers and agents
+description: >-
+  Lia is a comprehensive, self-hosted insurance management platform built for
+  brokers, agents, and small teams. Manage your entire book of business from
+  a single, secure interface — no subscriptions, no data sharing.
+
+
+  Features:
+
+  👥 Client Management: Store and manage all client records with encrypted
+  contact details, notes, and document attachments.
+
+
+  📋 Policies & Quotes: Track policies across multiple lines of business,
+  manage renewals, and generate quotes with full history.
+
+
+  📁 Document Storage: Attach and organise policy documents, certificates, and
+  correspondence directly against client and policy records.
+
+
+  🔔 Tasks & Reminders: Built-in task management with due-date reminders to
+  keep renewals, follow-ups, and compliance tasks on track.
+
+
+  📊 Reports & Analytics: Dashboard insights into your pipeline, active book,
+  and expiring policies at a glance.
+
+
+  🔒 Security-first: All sensitive client data is encrypted at rest using
+  AES-256 encryption. Full audit log tracks every action taken in the system.
+
+
+  🤖 AI Assistant: Optional AI-powered summaries and business insights using
+  your own API key (OpenAI / Anthropic / local models supported).
+
+
+  🛡️ Team Support: Multi-team architecture with role-based access control —
+  admins, managers, and agents each see only what they need.
+developer: Jordan Mitchell
+website: https://github.com/jordanm88/lia
+dependencies: []
+repo: https://github.com/jordanm88/lia
+support: https://github.com/jordanm88/lia/issues
+port: 3546
+gallery:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+path: ""
+defaultUsername: ""
+defaultPassword: ""
