@@ -4,6 +4,7 @@ category: data
 name: Lia
 version: "0.1.0"
 tagline: Self-hosted insurance CRM for brokers and agents
+port: 5000
 description: >-
   Lia is a comprehensive, self-hosted insurance management platform built for
   brokers, agents, and small teams. Manage your entire book of business from
