@@ -2,7 +2,7 @@ manifestVersion: 1
 id: jordanm88-lia
 category: database
 name: Lia
-version: "0.1.0"
+version: "0.1.1"
 tagline: Self-hosted insurance CRM for brokers and agents
 icon: icon.png
 description: >-
