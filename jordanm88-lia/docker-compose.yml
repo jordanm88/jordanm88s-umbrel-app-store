@@ -11,8 +11,8 @@ services:
     image: ghcr.io/jordanm88/lia:0.1.0
     restart: on-failure
     environment:
-      ENCRYPTION_KEY: $APP_SEED
-      SESSION_SECRET: $APP_SEED
+      ENCRYPTION_KEY: CHANGE_ME_TO_SOMETHING_SECURE
+      SESSION_SECRET: CHANGE_ME_TO_SOMETHING_SECURE
       NODE_ENV: production
     volumes:
       - ${APP_DATA_DIR}/data/db:/app/data
