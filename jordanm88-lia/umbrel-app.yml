@@ -48,7 +48,7 @@ website: https://github.com/jordanm88/lia
 dependencies: []
 repo: https://github.com/jordanm88/lia
 support: https://github.com/jordanm88/lia/issues
-port: 3546
+port: 5000
 gallery:
   - 1.jpg
   - 2.jpg
