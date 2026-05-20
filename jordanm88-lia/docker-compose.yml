@@ -1,18 +1,15 @@
 version: "3.7"
 
 services:
-  app_proxy:
-    environment:
-      APP_HOST: lia_app_1
-      APP_PORT: 5000
-      PROXY_AUTH_ADD: "false"
-
-  app:
+  lia:
     image: ghcr.io/jordanm88/lia:0.1.0
+    container_name: jordanm88-lia
+    ports: 
+      - '5000:5000'
     restart: on-failure
     environment:
-      ENCRYPTION_KEY: CHANGE_ME_TO_SOMETHING_SECURE
-      SESSION_SECRET: CHANGE_ME_TO_SOMETHING_SECURE
+      ENCRYPTION_KEY: $APP_SEED
+      SESSION_SECRET: $APP_SEED
       NODE_ENV: production
     volumes:
       - ${APP_DATA_DIR}/data/db:/app/data
