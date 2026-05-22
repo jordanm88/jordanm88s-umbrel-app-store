@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   lia:
-    image: ghcr.io/jordanm88/lia:0.1.1
+    image: ghcr.io/jordanm88/lia:0.1.2
     container_name: jordanm88-lia
     ports: 
       - '5000:5000'
@@ -10,7 +10,6 @@ services:
     environment:
       ENCRYPTION_KEY: $APP_SEED
       SESSION_SECRET: $APP_SEED
-      DOMAIN: http://${DEVICE_DOMAIN_NAME}:5000
       NODE_ENV: production
       CORS_BYPASS: yes
     volumes:
