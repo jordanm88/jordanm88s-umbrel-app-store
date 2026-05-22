@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   lia:
-    image: ghcr.io/jordanm88/lia:0.1.2
+    image: ghcr.io/jordanm88/lia:0.1.3
     container_name: jordanm88-lia
     ports: 
       - '5000:5000'
