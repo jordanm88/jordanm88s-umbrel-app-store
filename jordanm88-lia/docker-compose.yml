@@ -1,13 +1,15 @@
 version: "3.7"
 
 services:
-  lia:
+ app_proxy:
     image: ghcr.io/jordanm88/lia:0.1.3
     container_name: jordanm88-lia
     ports: 
       - '5000:5000'
     restart: on-failure
     environment:
+      APP_HOST: jordanm88-lia_app_1
+      APP_PORT: 5000
       ENCRYPTION_KEY: $APP_SEED
       SESSION_SECRET: $APP_SEED
       NODE_ENV: production
