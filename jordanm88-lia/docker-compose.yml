@@ -16,7 +16,7 @@ services:
     # installs are reproducible and an updated tag can't change what runs until this line changes.
     # To ship a new build: push the image, then update the tag + digest here and bump `version` in
     # umbrel-app.yml. (linux/amd64 only.)
-    image: ghcr.io/jordanm88/lia:0.1.72@sha256:9d6ebe5698b33c7d78f4fd1ca6df0c0883351dc3f3aef92e959736df13e6dedf
+    image: ghcr.io/jordanm88/lia:0.1.7@sha256:2ffe36012182d8aa555f2b5cb3eb3fcedd3fe37ff352be9f78626825a36c3b45
     restart: on-failure
     stop_grace_period: 1m
     init: true
