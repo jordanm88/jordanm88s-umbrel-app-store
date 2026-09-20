@@ -2,9 +2,9 @@ manifestVersion: 1
 id: jordanm88-lia
 category: files
 name: Lia
-version: "0.1.73"
+version: "0.1.74"
 tagline: Self-hosted insurance CRM for brokers and agents
-icon: https://images-jm.b-cdn.net/images/lia/icon.png
+icon: https://images-jm.b-cdn.net/lia/icon.png
 description: >-
   Lia is a comprehensive, self-hosted insurance management platform built for
   brokers, agents, and small teams. Manage your entire book of business from
@@ -49,13 +49,12 @@ repo: https://github.com/jordanm88/lia
 support: https://github.com/jordanm88/lia/issues
 port: 5137
 gallery:
-  - https://images-jm.b-cdn.net/images/lia/1.jpg
-  - https://images-jm.b-cdn.net/images/lia/2.jpg
-  - https://images-jm.b-cdn.net/images/lia/3.jpg
+  - https://images-jm.b-cdn.net/lia/1.jpg
+  - https://images-jm.b-cdn.net/lia/2.jpg
+  - https://images-jm.b-cdn.net/lia/3.jpg
 releaseNotes: >-
-  Umbrel packaging refresh: dedicated port (5137), secrets derived per install
-  from your Umbrel seed instead of being stored in the app definition, and
-  persistent database and upload storage. Runs the published Lia 0.1.72 image.
+  - Updates and optimisations to the UI and UX for a smoother experience.
+  - Bug fixes and performance improvements.
 path: ""
 defaultUsername: ""
 defaultPassword: ""
