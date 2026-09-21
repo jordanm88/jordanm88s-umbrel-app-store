@@ -2,7 +2,7 @@ manifestVersion: 1
 id: jordanm88-lia
 category: files
 name: Lia
-version: "0.1.74"
+version: "0.1.75"
 tagline: Self-hosted insurance CRM for brokers and agents
 icon: https://images-jm.b-cdn.net/lia/icon.png
 description: >-
@@ -53,8 +53,9 @@ gallery:
   - https://images-jm.b-cdn.net/lia/2.jpg
   - https://images-jm.b-cdn.net/lia/3.jpg
 releaseNotes: >-
-  - Updates and optimisations to the UI and UX for a smoother experience.
-  - Bug fixes and performance improvements.
+  - Fixed issue with CRM imports
+  - Added business insights widgets
+  - Added further shortcuts to the sidepanel
 path: ""
 defaultUsername: ""
 defaultPassword: ""
