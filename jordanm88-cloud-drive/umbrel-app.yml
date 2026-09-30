@@ -9,6 +9,8 @@ description: >-
   A self-hosted file manager for WebDAV and S3-compatible storage, with sharing,
   previews, webmail, tasks, photos, notes and more. App data and its SQLite
   database stay on your Umbrel. The first account created becomes the admin.
+  Admins can also add folders on the Umbrel itself (Home, USB drives and
+  network shares) as storage.
 developer: Jordan Mitchell
 website: https://github.com/jordanm88/cloud-drive
 dependencies: []

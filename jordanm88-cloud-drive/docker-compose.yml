@@ -19,3 +19,8 @@ services:
     command: ["node", "scripts/umbrel-start.mjs"]
     volumes:
       - ${APP_DATA_DIR}/data:/data
+      # Umbrel folders offered as "Folder on this Umbrel" storage (admins only). rslave picks up USB drives and
+      # network shares mounted after the app starts.
+      - ${UMBREL_ROOT}/home:/umbrel/home
+      - ${UMBREL_ROOT}/external:/umbrel/external:rslave
+      - ${UMBREL_ROOT}/network:/umbrel/network:rslave
