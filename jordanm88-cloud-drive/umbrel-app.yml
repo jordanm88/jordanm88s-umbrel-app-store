@@ -2,7 +2,7 @@ manifestVersion: 1
 id: jordanm88-cloud-drive
 category: files
 name: Cloud Drive
-version: "0.2.3"
+version: "0.2.4"
 tagline: Private drive for your WebDAV and S3 storage
 icon: https://images-jm.b-cdn.net/cloud-drive/icon-512.png
 description: >-
@@ -28,10 +28,11 @@ gallery:
   - 8.jpg
   - 9.jpg
 releaseNotes: >-
-  - Added alternative views on documents
-  - Various bug patches and improvements
-  - Calendar fixes
-  - Notification fixes
+  - Offline support for notes and tasks
+  - Notes export as PDF or Word
+  - Notes import
+  - Keyboard shortcuts
+  - Folders for notes
 path: ""
 defaultUsername: ""
 defaultPassword: ""
