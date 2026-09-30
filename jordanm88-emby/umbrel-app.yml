@@ -1,5 +1,5 @@
 manifestVersion: 1
-id: emby
+id: jordanm88-emby
 storage:
   dataRoot: data
 folderAccess:

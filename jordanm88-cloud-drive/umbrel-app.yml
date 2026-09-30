@@ -17,7 +17,16 @@ dependencies: []
 repo: https://github.com/jordanm88/cloud-drive
 support: https://github.com/jordanm88/cloud-drive/issues
 port: 4444
-gallery: []
+gallery:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg
+  - 7.jpg
+  - 8.jpg
+  - 9.jpg
 releaseNotes: >-
   - Added alternative views on documents
   - Various bug patches and improvements
