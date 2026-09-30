@@ -2,22 +2,25 @@ manifestVersion: 1
 id: jordanm88-cloud-drive
 category: files
 name: Cloud Drive
-version: "0.1.0"
+version: "0.2.2"
 tagline: Private drive for your WebDAV and S3 storage
-icon: https://raw.githubusercontent.com/jordanm88/cloud-drive/main/public/icons/icon-512.png
+icon: https://images-jm.b-cdn.net/cloud-drive/icon-512.png
 description: >-
   A self-hosted file manager for WebDAV and S3-compatible storage, with sharing,
   previews, webmail, tasks, photos, notes and more. App data and its SQLite
   database stay on your Umbrel. The first account created becomes the admin.
+  Admins can also add folders on the Umbrel itself (Home, USB drives and
+  network shares) as storage.
 developer: Jordan Mitchell
 website: https://github.com/jordanm88/cloud-drive
 dependencies: []
 repo: https://github.com/jordanm88/cloud-drive
 support: https://github.com/jordanm88/cloud-drive/issues
-port: 8091
+port: 4444
 gallery: []
 releaseNotes: >-
-  First Umbrel release. Uses local SQLite with persistent app data.
+  Admins can now add folders on this Umbrel (Home, USB drives and network
+  shares) as storage, from Storage → Connect storage.
 path: ""
 defaultUsername: ""
 defaultPassword: ""

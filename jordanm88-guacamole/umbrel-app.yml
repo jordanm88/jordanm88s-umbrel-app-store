@@ -24,3 +24,4 @@ defaultPassword: ""
 icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/guacamole.png
 submitter: jordanm88
 submission: https://github.com/jordanm88/jordanm88s-umbrel-app-store
+disabled: true

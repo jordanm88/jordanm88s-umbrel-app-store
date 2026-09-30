@@ -22,3 +22,4 @@ defaultPassword: ""
 icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/baserow.png
 submitter: jordanm88
 submission: https://github.com/jordanm88s-umbrel-app-store/pull/
+disabled: true

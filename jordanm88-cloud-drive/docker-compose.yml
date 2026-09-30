@@ -4,18 +4,23 @@ services:
   app_proxy:
     environment:
       APP_HOST: jordanm88-cloud-drive_app_1
-      APP_PORT: 8000
+      APP_PORT: 4444
       PROXY_AUTH_ADD: "false"
 
   app:
-    image: ghcr.io/jordanm88/cloud-drive:0.1.0
+    image: ghcr.io/jordanm88/cloud-drive:0.2.2
     restart: on-failure
     stop_grace_period: 1m
     init: true
     user: "0:0"
     environment:
       NODE_ENV: production
-      PORT: "8000"
+      PORT: "4444"
     command: ["node", "scripts/umbrel-start.mjs"]
     volumes:
       - ${APP_DATA_DIR}/data:/data
+      # Umbrel folders offered as "Folder on this Umbrel" storage (admins only). rslave picks up USB drives and
+      # network shares mounted after the app starts.
+      - ${UMBREL_ROOT}/home:/umbrel/home
+      - ${UMBREL_ROOT}/external:/umbrel/external:rslave
+      - ${UMBREL_ROOT}/network:/umbrel/network:rslave

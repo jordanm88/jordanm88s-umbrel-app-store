@@ -31,3 +31,4 @@ dependencies: []
 path: ""
 defaultUsername: "admin@admin.com"
 defaultPassword: "P@ssw0rd"
+disabled: true
