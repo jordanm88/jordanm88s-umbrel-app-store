@@ -1,11 +1,26 @@
 manifestVersion: 1
-id: jordanm88-emby
+id: emby
+storage:
+  dataRoot: data
+folderAccess:
+  - id: umbrel-downloads
+    name: Downloads
+    note: Media files for your Emby libraries. Available inside Emby at /downloads.
+    mounts:
+      - service: server
+        targetPath: /downloads
+  - id: media-library
+    name: Media Library
+    note: Select an additional folder containing media, then add /media as a folder in an Emby library. Access is read-only to protect the original files.
+    mounts:
+      - service: server
+        targetPath: /media
+        readOnly: true
 name: Emby
 tagline: A personal media server
-icon: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.JKQcWsC8ebmED9CE6D8nyQHaHa%3Fpid%3DApi&f=1&ipt=54179d5ecc93e6e16e91d109df9e895e3b4cdfd52d697b192894f1e0824f459a&ipo=images
 category: media
-version: "4.8.11.0"
-port: 8096
+version: "4.10.1.0"
+port: 8103
 description: >-
   ▶️ Emby is a powerful media server software designed to help users manage, stream, and enjoy their personal collection of movies, TV shows, music, photos, and home videos across a wide range of devices. It acts as a central hub for all your digital media, automatically organizing content and enriching it with metadata like cover art, descriptions, and ratings. Emby provides a clean and intuitive interface that allows users to easily browse and play their media, whether they are at home or on the go.
 
@@ -23,14 +38,29 @@ description: >-
 developer: Emby LLC
 website: https://emby.media/
 submitter: jordanm88
-submission: https://github.com/getumbrel/umbrel-apps/pull/
+submission: https://github.com/getumbrel/umbrel-apps/pull/3183
 repo: https://github.com/MediaBrowser/Emby
 support: https://github.com/MediaBrowser/Emby/issues
 gallery:
-  - https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.JKQcWsC8ebmED9CE6D8nyQHaHa%3Fpid%3DApi&f=1&ipt=54179d5ecc93e6e16e91d109df9e895e3b4cdfd52d697b192894f1e0824f459a&ipo=images
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg
+  - 7.jpg
 releaseNotes: >-
-  This Emby version introduces numerous enhancements and fixes, as noted on their changelog here https://github.com/MediaBrowser/Emby.Releases/releases/tag/4.8.11.0
-dependencies:
+  This update fixes intro detection for episode files without audio streams, playlist image updates when removing items, and SMB share connection errors.
+
+
+  It also improves search performance, the new spotlight feature, photo slideshows, horizontal home screen sections, folder runtime indicators, TV display settings menus, and subtitle appearance controls.
+
+
+  Full release notes can be found at https://github.com/MediaBrowser/Emby.Releases/releases/tag/4.10.1.0
+dependencies: []
 path: ""
 defaultUsername: ""
 defaultPassword: ""
+permissions:
+  - STORAGE_DOWNLOADS
+  - GPU

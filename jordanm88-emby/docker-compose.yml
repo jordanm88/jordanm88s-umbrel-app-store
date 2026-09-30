@@ -4,18 +4,16 @@ services:
   app_proxy:
     environment:
       APP_HOST: jordanm88-emby_server_1
-      APP_PORT: 8096
+      APP_PORT: 8103
 
   server:
-    image: emby/embyserver:4.8.11.0
+    image: emby/embyserver:4.10.1.0
     environment:
       TZ: Europe/London
       UID: 1000
       GID: 1000
     restart: on-failure
     volumes:
-      - ${APP_DATA_DIR}/data/config:/config:rw
-      - ${APP_DATA_DIR}/data/tvshows:/tvshows:rw
-      - ${APP_DATA_DIR}/data/music:/music:rw
-      - ${APP_DATA_DIR}/data/movies:/movies:rw
-      - ${APP_DATE_DIR}/mnt/media:/media:rw # This is a personal (External Samba) mount point, adjust as needed
+     -${UMBREL_ROOT}/external/Storage:/external-storage
+     - ${UMBREL_ROOT}/home/Videos:/home-videos
+     - ${UMBREL_ROOT}/network/u342271.your-storagebox.de/backup:/storage-box ### This is a personal mount, adjust as needed
