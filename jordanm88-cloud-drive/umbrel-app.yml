@@ -2,7 +2,7 @@ manifestVersion: 1
 id: jordanm88-cloud-drive
 category: files
 name: Cloud Drive
-version: "0.2.2"
+version: "0.2.3"
 tagline: Private drive for your WebDAV and S3 storage
 icon: https://images-jm.b-cdn.net/cloud-drive/icon-512.png
 description: >-
@@ -19,8 +19,10 @@ support: https://github.com/jordanm88/cloud-drive/issues
 port: 4444
 gallery: []
 releaseNotes: >-
-  Admins can now add folders on this Umbrel (Home, USB drives and network
-  shares) as storage, from Storage → Connect storage.
+  - Added alternative views on documents
+  - Various bug patches and improvements
+  - Calendar fixes
+  - Notification fixes
 path: ""
 defaultUsername: ""
 defaultPassword: ""
