@@ -2,8 +2,8 @@ manifestVersion: 1
 id: jordanm88-cloud-drive
 category: files
 name: Cloud Drive
-version: "0.2.6"
-tagline: Private drive for your WebDAV and S3 storage
+version: "0.2.7"
+tagline: Private drive for your WebDAV and S3 storage, along with other services - all in your control.
 icon: https://images-jm.b-cdn.net/cloud-drive/icon-512.png
 description: >-
   A self-hosted file manager for WebDAV and S3-compatible storage, with sharing,
@@ -17,10 +17,20 @@ dependencies: []
 repo: https://github.com/jordanm88/cloud-drive
 support: https://github.com/jordanm88/cloud-drive/issues
 port: 4444
-gallery: []
+gallery:
+  - https://images-jm.b-cdn.net/cloud-drive/1.jpg
+  - https://images-jm.b-cdn.net/cloud-drive/2.jpg
+  - https://images-jm.b-cdn.net/cloud-drive/3.jpg
+  - https://images-jm.b-cdn.net/cloud-drive/4.jpg
+  - https://images-jm.b-cdn.net/cloud-drive/5.jpg
+  - https://images-jm.b-cdn.net/cloud-drive/6.jpg
+  - https://images-jm.b-cdn.net/cloud-drive/7.jpg
+  - https://images-jm.b-cdn.net/cloud-drive/8.jpg
+  - https://images-jm.b-cdn.net/cloud-drive/9.jpg
 releaseNotes: >-
-  Admins can now add folders on this Umbrel (Home, USB drives and network
-  shares) as storage, from Storage → Connect storage.
+  - Mobile apps support
+  - Windows and Linux apps support
+  - Various bug fixes
 path: ""
 defaultUsername: ""
 defaultPassword: ""
