@@ -18,7 +18,7 @@ repo: https://github.com/jordanm88/cloud-drive
 support: https://github.com/jordanm88/cloud-drive/issues
 port: 4444
 gallery:
-  - 1.jpg
+  - https://images-jm.b-cdn.net/cloud-drive/1.jpg
   - 2.jpg
   - 3.jpg
   - 4.jpg
