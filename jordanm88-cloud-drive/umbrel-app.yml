@@ -3,7 +3,7 @@ id: jordanm88-cloud-drive
 category: files
 name: Cloud Drive
 version: "0.2.5"
-tagline: Private drive for your WebDAV and S3 storage
+tagline: Private drive for your WebDAV and S3 storage, along with other services - all in your control.
 icon: https://images-jm.b-cdn.net/cloud-drive/icon-512.png
 description: >-
   A self-hosted file manager for WebDAV and S3-compatible storage, with sharing,
@@ -19,14 +19,14 @@ support: https://github.com/jordanm88/cloud-drive/issues
 port: 4444
 gallery:
   - https://images-jm.b-cdn.net/cloud-drive/1.jpg
-  - 2.jpg
-  - 3.jpg
-  - 4.jpg
-  - 5.jpg
-  - 6.jpg
-  - 7.jpg
-  - 8.jpg
-  - 9.jpg
+  - https://images-jm.b-cdn.net/cloud-drive/2.jpg
+  - https://images-jm.b-cdn.net/cloud-drive/3.jpg
+  - https://images-jm.b-cdn.net/cloud-drive/4.jpg
+  - https://images-jm.b-cdn.net/cloud-drive/5.jpg
+  - https://images-jm.b-cdn.net/cloud-drive/6.jpg
+  - https://images-jm.b-cdn.net/cloud-drive/7.jpg
+  - https://images-jm.b-cdn.net/cloud-drive/8.jpg
+  - https://images-jm.b-cdn.net/cloud-drive/9.jpg
 releaseNotes: >-
   - Mobile apps support
   - Windows and Linux apps support
