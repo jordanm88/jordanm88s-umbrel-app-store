@@ -2,7 +2,7 @@ manifestVersion: 1
 id: jordanm88-cloud-drive
 category: files
 name: Cloud Drive
-version: "0.2.33"
+version: "0.2.34"
 tagline: Private drive for your WebDAV and S3 storage, along with other services - all in your control.
 icon: https://images-jm.b-cdn.net/cloud-drive/icon-512.png
 description: >-
@@ -28,8 +28,7 @@ gallery:
   - https://images-jm.b-cdn.net/cloud-drive/8.jpg
   - https://images-jm.b-cdn.net/cloud-drive/9.jpg
 releaseNotes: >-
-  - Mobile apps support
-  - Windows and Linux apps support
+  - Music plugin 
   - Various bug fixes
 path: ""
 defaultUsername: ""
