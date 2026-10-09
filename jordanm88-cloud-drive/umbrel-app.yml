@@ -28,8 +28,9 @@ gallery:
   - https://images-jm.b-cdn.net/cloud-drive/8.jpg
   - https://images-jm.b-cdn.net/cloud-drive/9.jpg
 releaseNotes: >-
-  - Music plugin 
-  - Various bug fixes
+  Passkey patches
+  AI labelling fixes
+  Squashed various bugs
 path: ""
 defaultUsername: ""
 defaultPassword: ""
