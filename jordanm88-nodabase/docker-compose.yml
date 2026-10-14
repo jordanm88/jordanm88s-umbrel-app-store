@@ -1,0 +1,47 @@
+# Compose Specification — no top-level `version:` key. Umbrel/umbreld
+# (which uses Compose v2) emits a deprecation warning if one is present.
+services:
+  app_proxy:
+    environment:
+      APP_HOST: jordanm88-nodabase_app_1
+      APP_PORT: 3001
+      PROXY_AUTH_ADD: "false"
+
+  postgres:
+    image: postgres:16-alpine
+    restart: on-failure
+    stop_grace_period: 1m
+    environment:
+      POSTGRES_USER: nodabase
+      POSTGRES_PASSWORD: ${APP_PASSWORD}
+      POSTGRES_DB: nodabase
+      # A subdirectory of the mount: initdb refuses a non-empty directory, and
+      # the mount point itself holds the store's .gitkeep.
+      PGDATA: /data/pgdata
+    healthcheck:
+      test: "pg_isready -U \"$$POSTGRES_USER\" -d \"$$POSTGRES_DB\""
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    volumes:
+      - ${APP_DATA_DIR}/data/db:/data
+
+  app:
+    image: ghcr.io/jordanm88/nodabase:0.1.0
+    restart: on-failure
+    stop_grace_period: 1m
+    user: "1000:1000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    volumes:
+      - ${APP_DATA_DIR}/data/app:/data
+    environment:
+      NODE_ENV: production
+      PORT: "3001"
+      DATABASE_URL: postgres://nodabase:${APP_PASSWORD}@postgres:5432/nodabase
+      # Umbrel serves apps over plain HTTP on the LAN (e.g. http://umbrel.local:4870),
+      # so don't force HTTPS redirects, HSTS or Secure-only cookies.
+      NODABASE_ALLOW_HTTP: "1"
+      APP_URL: http://${DEVICE_DOMAIN_NAME}:4870

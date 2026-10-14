@@ -1,0 +1,35 @@
+manifestVersion: 1
+id: jordanm88-nodabase
+storage:
+  dataRoot: data
+category: productivity
+name: Nodabase
+version: "0.1.0"
+# Served from the (public) app store repo: this repo is private, so its raw files can't be loaded.
+icon: https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-nodabase/icon.png
+tagline: Your data, connected — a self-hosted collaborative database
+description: >-
+  Nodabase is a self-hosted spreadsheet-meets-database app: workspaces,
+  bases, tables, rich field types, formulas, views, charts, automations,
+  forms and more — running entirely on your own hardware with a bundled
+  PostgreSQL database and Redis for realtime coordination.
+
+  The first user to register is granted admin rights automatically.
+  All required secrets (JWT signing key, encryption-at-rest key) are
+  generated on first boot and persisted to the app's data volume so they
+  remain stable across container restarts.
+releaseNotes: >-
+  First release of Nodabase.
+developer: Jordan Mitchell
+website: https://github.com/jordanm88/nodabase
+dependencies: []
+repo: https://github.com/jordanm88/nodabase
+support: https://github.com/jordanm88/nodabase/issues
+port: 4870
+gallery:
+  - https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-nodabase/1.png
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: Jordan Mitchell
+submission: https://github.com/jordanm88/nodabase
