@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 category: productivity
 name: Nodabase
-version: "0.1.2"
+version: "0.1.3"
 # Served from the (public) app store repo: this repo is private, so its raw files can't be loaded.
 icon: https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-nodabase/icon.png
 tagline: Your data, connected — a self-hosted collaborative database
@@ -19,10 +19,11 @@ description: >-
   generated on first boot and persisted to the app's data volume so they
   remain stable across container restarts.
 releaseNotes: >-
-  A fresh look (new logo, typefaces and sign-in pages) and a round of fixes:
-  invite links work, automations run when they're triggered, kanban and
-  gallery cards show proper values, and every reported security alert in
-  the app's dependencies is patched.
+  Backups you can count on: snapshots and automation backups now restore
+  with their linked records and connections intact, scheduled snapshots run
+  on time, and Excel snapshots no longer fail on unusual table names. Bases
+  made from a template keep their own links. Admins' workspaces now start on
+  Enterprise, and the logo's amber node comes alive.
 developer: Jordan Mitchell
 website: https://github.com/jordanm88/nodabase
 dependencies: []

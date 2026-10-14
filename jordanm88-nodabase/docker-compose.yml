@@ -28,7 +28,7 @@ services:
       - ${APP_DATA_DIR}/data/db:/data
 
   app:
-    image: ghcr.io/jordanm88/nodabase:0.1.2
+    image: ghcr.io/jordanm88/nodabase:0.1.3
     restart: on-failure
     stop_grace_period: 1m
     user: "1000:1000"
