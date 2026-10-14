@@ -28,7 +28,7 @@ services:
       - ${APP_DATA_DIR}/data/db:/data
 
   app:
-    image: ghcr.io/jordanm88/nodabase:0.1.0
+    image: ghcr.io/jordanm88/nodabase:0.1.1
     restart: on-failure
     stop_grace_period: 1m
     user: "1000:1000"
@@ -40,7 +40,9 @@ services:
     environment:
       NODE_ENV: production
       PORT: "3001"
-      DATABASE_URL: postgres://nodabase:${APP_PASSWORD}@postgres:5432/nodabase
+      # The full container name: every Umbrel app shares one network, and other apps' databases answer to
+      # "postgres" too (they'd be reached instead, failing with "password authentication failed").
+      DATABASE_URL: postgres://nodabase:${APP_PASSWORD}@jordanm88-nodabase_postgres_1:5432/nodabase
       # Umbrel serves apps over plain HTTP on the LAN (e.g. http://umbrel.local:4870),
       # so don't force HTTPS redirects, HSTS or Secure-only cookies.
       NODABASE_ALLOW_HTTP: "1"

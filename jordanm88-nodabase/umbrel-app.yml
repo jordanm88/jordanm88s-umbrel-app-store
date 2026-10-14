@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 category: productivity
 name: Nodabase
-version: "0.1.0"
+version: "0.1.1"
 # Served from the (public) app store repo: this repo is private, so its raw files can't be loaded.
 icon: https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-nodabase/icon.png
 tagline: Your data, connected — a self-hosted collaborative database
@@ -19,7 +19,7 @@ description: >-
   generated on first boot and persisted to the app's data volume so they
   remain stable across container restarts.
 releaseNotes: >-
-  First release of Nodabase.
+  Fixes the database connection on Umbrels where another app also has a database named "postgres".
 developer: Jordan Mitchell
 website: https://github.com/jordanm88/nodabase
 dependencies: []
