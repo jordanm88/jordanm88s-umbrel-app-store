@@ -28,7 +28,7 @@ services:
       - ${APP_DATA_DIR}/data/db:/data
 
   app:
-    image: ghcr.io/jordanm88/nodabase:0.1.1
+    image: ghcr.io/jordanm88/nodabase:0.1.2
     restart: on-failure
     stop_grace_period: 1m
     user: "1000:1000"
@@ -46,4 +46,7 @@ services:
       # Umbrel serves apps over plain HTTP on the LAN (e.g. http://umbrel.local:4870),
       # so don't force HTTPS redirects, HSTS or Secure-only cookies.
       NODABASE_ALLOW_HTTP: "1"
+      # Requests arrive through Umbrel's app proxy (a private address that changes): trust its X-Forwarded-For, so
+      # each visitor gets their own rate-limit allowance instead of the whole household sharing the proxy's.
+      NODABASE_TRUST_PRIVATE_PROXY: "1"
       APP_URL: http://${DEVICE_DOMAIN_NAME}:4870

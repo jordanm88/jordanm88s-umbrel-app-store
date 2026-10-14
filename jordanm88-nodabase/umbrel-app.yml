@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 category: productivity
 name: Nodabase
-version: "0.1.1"
+version: "0.1.2"
 # Served from the (public) app store repo: this repo is private, so its raw files can't be loaded.
 icon: https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-nodabase/icon.png
 tagline: Your data, connected — a self-hosted collaborative database
@@ -19,7 +19,10 @@ description: >-
   generated on first boot and persisted to the app's data volume so they
   remain stable across container restarts.
 releaseNotes: >-
-  Fixes the database connection on Umbrels where another app also has a database named "postgres".
+  A fresh look (new logo, typefaces and sign-in pages) and a round of fixes:
+  invite links work, automations run when they're triggered, kanban and
+  gallery cards show proper values, and every reported security alert in
+  the app's dependencies is patched.
 developer: Jordan Mitchell
 website: https://github.com/jordanm88/nodabase
 dependencies: []
@@ -27,7 +30,11 @@ repo: https://github.com/jordanm88/nodabase
 support: https://github.com/jordanm88/nodabase/issues
 port: 4870
 gallery:
-  - https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-nodabase/1.png
+  - https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-nodabase/1.jpg
+  - https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-nodabase/2.jpg
+  - https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-nodabase/3.jpg
+  - https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-nodabase/4.jpg
+  - https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-nodabase/5.jpg
 path: ""
 defaultUsername: ""
 defaultPassword: ""
