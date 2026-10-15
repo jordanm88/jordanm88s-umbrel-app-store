@@ -2,7 +2,7 @@ manifestVersion: 1
 id: jordanm88-lia
 category: files
 name: Lia
-version: "0.1.81"
+version: "0.1.82"
 tagline: Self-hosted insurance CRM for brokers and agents
 icon: https://images-jm.b-cdn.net/lia/icon.png
 description: >-
@@ -53,9 +53,13 @@ gallery:
   - https://images-jm.b-cdn.net/lia/2.jpg
   - https://images-jm.b-cdn.net/lia/3.jpg
 releaseNotes: >-
-  - The dashboard's date filter (this year, last year, last month and so on) now
-  applies to every panel: the Outlook, pipeline by stage and team leaderboard
-  all report on the chosen period
+  - Security: fixes every known vulnerability in Lia's dependencies
+
+  - Leads: your board/list choice and the list's sort are saved to your account
+  and follow you to any device. Sort the list by start / renewal date, follow-up,
+  company, stage or premium. Phone cards show the start / renewal date
+
+  - Lia Notifications for Android is now available on each GitHub release
 path: ""
 defaultUsername: ""
 defaultPassword: ""
