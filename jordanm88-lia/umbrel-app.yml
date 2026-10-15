@@ -2,7 +2,7 @@ manifestVersion: 1
 id: jordanm88-lia
 category: files
 name: Lia
-version: "0.1.79"
+version: "0.1.80"
 tagline: Self-hosted insurance CRM for brokers and agents
 icon: https://images-jm.b-cdn.net/lia/icon.png
 description: >-
@@ -53,8 +53,8 @@ gallery:
   - https://images-jm.b-cdn.net/lia/2.jpg
   - https://images-jm.b-cdn.net/lia/3.jpg
 releaseNotes: >-
-  - The starting figures for forecasts (quote win rate, lead conversion and
-  renewal rate) can now be changed under Settings → Business rules
+  - Quotes and policies can now include an insurer fee and an admin fee. Neither
+  is subject to IPT, and the admin fee counts as income alongside commission
 path: ""
 defaultUsername: ""
 defaultPassword: ""
