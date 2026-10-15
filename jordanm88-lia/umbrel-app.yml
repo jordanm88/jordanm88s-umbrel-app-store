@@ -2,7 +2,7 @@ manifestVersion: 1
 id: jordanm88-lia
 category: files
 name: Lia
-version: "0.1.82"
+version: "0.1.83"
 tagline: Self-hosted insurance CRM for brokers and agents
 icon: https://images-jm.b-cdn.net/lia/icon.png
 description: >-
@@ -53,13 +53,9 @@ gallery:
   - https://images-jm.b-cdn.net/lia/2.jpg
   - https://images-jm.b-cdn.net/lia/3.jpg
 releaseNotes: >-
-  - Security: fixes every known vulnerability in Lia's dependencies
-
-  - Leads: your board/list choice and the list's sort are saved to your account
-  and follow you to any device. Sort the list by start / renewal date, follow-up,
-  company, stage or premium. Phone cards show the start / renewal date
-
-  - Lia Notifications for Android is now available on each GitHub release
+  - Lia for Android is now the full Lia app, not just notifications: enter your
+  server's address, sign in, and use everything in Lia on your phone, with
+  notifications in the background. Download Lia-0.1.83.apk from the GitHub release
 path: ""
 defaultUsername: ""
 defaultPassword: ""
