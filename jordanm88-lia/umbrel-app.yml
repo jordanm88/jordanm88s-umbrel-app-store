@@ -2,7 +2,7 @@ manifestVersion: 1
 id: jordanm88-lia
 category: files
 name: Lia
-version: "0.1.80"
+version: "0.1.81"
 tagline: Self-hosted insurance CRM for brokers and agents
 icon: https://images-jm.b-cdn.net/lia/icon.png
 description: >-
@@ -53,8 +53,9 @@ gallery:
   - https://images-jm.b-cdn.net/lia/2.jpg
   - https://images-jm.b-cdn.net/lia/3.jpg
 releaseNotes: >-
-  - Quotes and policies can now include an insurer fee and an admin fee. Neither
-  is subject to IPT, and the admin fee counts as income alongside commission
+  - The dashboard's date filter (this year, last year, last month and so on) now
+  applies to every panel: the Outlook, pipeline by stage and team leaderboard
+  all report on the chosen period
 path: ""
 defaultUsername: ""
 defaultPassword: ""
