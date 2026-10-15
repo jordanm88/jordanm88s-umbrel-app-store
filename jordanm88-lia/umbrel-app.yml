@@ -2,7 +2,7 @@ manifestVersion: 1
 id: jordanm88-lia
 category: files
 name: Lia
-version: "0.1.78"
+version: "0.1.79"
 tagline: Self-hosted insurance CRM for brokers and agents
 icon: https://images-jm.b-cdn.net/lia/icon.png
 description: >-
@@ -53,9 +53,8 @@ gallery:
   - https://images-jm.b-cdn.net/lia/2.jpg
   - https://images-jm.b-cdn.net/lia/3.jpg
 releaseNotes: >-
-  - Leads can now be saved without a business source or assignee
-  - Forecasts, win rate, lead conversion and retention now show from day one as
-  early estimates, and become more accurate as your history builds
+  - The starting figures for forecasts (quote win rate, lead conversion and
+  renewal rate) can now be changed under Settings → Business rules
 path: ""
 defaultUsername: ""
 defaultPassword: ""
