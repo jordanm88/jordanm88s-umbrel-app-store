@@ -2,7 +2,7 @@ manifestVersion: 1
 id: jordanm88-lia
 category: files
 name: Lia
-version: "0.1.88"
+version: "0.1.89"
 tagline: Self-hosted insurance CRM for brokers and agents
 icon: https://images-jm.b-cdn.net/lia/icon.png
 description: >-
@@ -53,9 +53,9 @@ gallery:
   - https://images-jm.b-cdn.net/lia/2.jpg
   - https://images-jm.b-cdn.net/lia/3.jpg
 releaseNotes: >-
-  - Documents show which client and record (policy, quote or claim, with its
-  number) they belong to at a glance. Branding: a logo can be linked by URL,
-  and a new option shows only the logo at the top of the side panel
+  - New Gangmasters (GLAA) compliance tab for recruitment clients. Your logo
+  now shows on the sign-in page, and the browser tab icon can use your logo
+  or a custom image. Licences no longer duplicate after a reinstall
 path: ""
 defaultUsername: ""
 defaultPassword: ""
