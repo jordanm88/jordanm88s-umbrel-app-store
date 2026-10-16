@@ -29,7 +29,7 @@ gallery:
   - https://images-jm.b-cdn.net/cloud-drive/9.jpg
 releaseNotes: >-
   Security update: patches a reported weakness in a library used by
-  spreadsheet exports.
+  spreadsheet exports and Umbrel gallery patches.
 path: ""
 defaultUsername: ""
 defaultPassword: ""
