@@ -1,7 +1,7 @@
 version: "3.7"
 
 services:
-  # Umbrel's own proxy. It publishes the manifest port (5137) on the host and forwards to the app
+  # Umbrel's own proxy. It publishes the manifest port (5454) on the host and forwards to the app
   # container below. Lia is the only thing that owns that port.
   app_proxy:
     environment:
@@ -25,8 +25,8 @@ services:
       PORT: "8811"
       # Tells Lia it is running on plain-HTTP Umbrel (no HTTPS redirect, relaxed local origins).
       UMBREL_MODE: "true"
-      # Must match how you reach the app; port 8811 is the manifest port above.
-      DOMAIN: http://${DEVICE_DOMAIN_NAME}:8811
+      # Must match how you reach the app; port 5454 is the manifest port above.
+      DOMAIN: http://${DEVICE_DOMAIN_NAME}:5454
       # Per-install secrets derived from your Umbrel seed: nothing sensitive is stored in this file.
       # ENCRYPTION_KEY protects data in the database, so it must never change for an existing install.
       ENCRYPTION_KEY: ${APP_SEED}

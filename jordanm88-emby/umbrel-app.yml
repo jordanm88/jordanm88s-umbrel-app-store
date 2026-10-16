@@ -64,3 +64,4 @@ defaultPassword: ""
 permissions:
   - STORAGE_DOWNLOADS
   - GPU
+disabled: true
