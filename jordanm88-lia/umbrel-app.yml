@@ -2,7 +2,7 @@ manifestVersion: 1
 id: jordanm88-lia
 category: files
 name: Lia
-version: "0.1.83"
+version: "0.1.84"
 tagline: Self-hosted insurance CRM for brokers and agents
 icon: https://images-jm.b-cdn.net/lia/icon.png
 description: >-
@@ -53,9 +53,10 @@ gallery:
   - https://images-jm.b-cdn.net/lia/2.jpg
   - https://images-jm.b-cdn.net/lia/3.jpg
 releaseNotes: >-
-  - Lia for Android is now the full Lia app, not just notifications: enter your
-  server's address, sign in, and use everything in Lia on your phone, with
-  notifications in the background. Download Lia-0.1.83.apk from the GitHub release
+  - Clients now show every Companies House record in their Activity tab, and a
+  Companies House section on the Overview with status, SIC codes, turnover
+  bracket, due dates, officers and more. Lia checks linked companies daily and
+  keeps the log up to date
 path: ""
 defaultUsername: ""
 defaultPassword: ""
