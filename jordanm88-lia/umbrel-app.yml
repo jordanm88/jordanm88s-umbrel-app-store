@@ -2,7 +2,7 @@ manifestVersion: 1
 id: jordanm88-lia
 category: files
 name: Lia
-version: "0.1.86"
+version: "0.1.87"
 tagline: Self-hosted insurance CRM for brokers and agents
 icon: https://images-jm.b-cdn.net/lia/icon.png
 description: >-
@@ -53,10 +53,10 @@ gallery:
   - https://images-jm.b-cdn.net/lia/2.jpg
   - https://images-jm.b-cdn.net/lia/3.jpg
 releaseNotes: >-
-  - The app name, browser tab and emails follow the Company name set in
-  Settings. One Refresh registers button now covers CQC, CIW, the Care
-  Inspectorate and RQIA. CQC ratings load again. Quotes marked not taken up
-  or declined keep their owner in the pipeline
+  - Regulator checks (CQC, CIW, Care Inspectorate, RQIA, GLAA) now match
+  whole company names only, and a wrong match can be unlinked from the
+  client's Regulators panel. Quotes created from a lead put the expected
+  premium in the premium only, not the limit
 path: ""
 defaultUsername: ""
 defaultPassword: ""
