@@ -2,7 +2,7 @@ manifestVersion: 1
 id: jordanm88-lia
 category: files
 name: Lia
-version: "0.1.84"
+version: "0.1.85"
 tagline: Self-hosted insurance CRM for brokers and agents
 icon: https://images-jm.b-cdn.net/lia/icon.png
 description: >-
@@ -53,10 +53,12 @@ gallery:
   - https://images-jm.b-cdn.net/lia/2.jpg
   - https://images-jm.b-cdn.net/lia/3.jpg
 releaseNotes: >-
-  - Clients now show every Companies House record in their Activity tab, and a
-  Companies House section on the Overview with status, SIC codes, turnover
-  bracket, due dates, officers and more. Lia checks linked companies daily and
-  keeps the log up to date
+  - Care clients are checked against the regulator for where they're based:
+  CQC, Care Inspectorate Wales, the Care Inspectorate or RQIA, with a rating
+  badge. Recruitment clients are checked on the GLAA register. Each can be
+  turned off in Settings. Lost quotes and policies now need a reason, reported
+  under Reports › Lost business. Reports and the Dashboard follow your
+  financial year
 path: ""
 defaultUsername: ""
 defaultPassword: ""
