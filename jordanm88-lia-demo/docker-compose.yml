@@ -26,7 +26,7 @@ services:
       # Tells Lia it is running on plain-HTTP Umbrel (no HTTPS redirect, relaxed local origins).
       UMBREL_MODE: "true"
       # Must match how you reach the app; port 5137 is the manifest port above.
-      DOMAIN: http://${DEVICE_DOMAIN_NAME}:5137
+      DOMAIN: http://${DEVICE_DOMAIN_NAME}:8811
       # Per-install secrets derived from your Umbrel seed: nothing sensitive is stored in this file.
       # ENCRYPTION_KEY protects data in the database, so it must never change for an existing install.
       ENCRYPTION_KEY: ${APP_SEED}
