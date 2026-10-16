@@ -2,7 +2,7 @@ manifestVersion: 1
 id: jordanm88-lia
 category: files
 name: Lia
-version: "0.1.87"
+version: "0.1.88"
 tagline: Self-hosted insurance CRM for brokers and agents
 icon: https://images-jm.b-cdn.net/lia/icon.png
 description: >-
@@ -53,10 +53,9 @@ gallery:
   - https://images-jm.b-cdn.net/lia/2.jpg
   - https://images-jm.b-cdn.net/lia/3.jpg
 releaseNotes: >-
-  - Regulator checks (CQC, CIW, Care Inspectorate, RQIA, GLAA) now match
-  whole company names only, and a wrong match can be unlinked from the
-  client's Regulators panel. Quotes created from a lead put the expected
-  premium in the premium only, not the limit
+  - Documents show which client and record (policy, quote or claim, with its
+  number) they belong to at a glance. Branding: a logo can be linked by URL,
+  and a new option shows only the logo at the top of the side panel
 path: ""
 defaultUsername: ""
 defaultPassword: ""
