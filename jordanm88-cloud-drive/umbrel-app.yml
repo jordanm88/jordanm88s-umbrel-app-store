@@ -2,7 +2,7 @@ manifestVersion: 1
 id: jordanm88-cloud-drive
 category: files
 name: Cloud Drive
-version: "0.2.55"
+version: "0.2.56"
 tagline: Private drive for your WebDAV and S3 storage
 icon: https://images-jm.b-cdn.net/cloud-drive/icon-512.png
 description: >-
@@ -28,11 +28,12 @@ gallery:
   - https://images-jm.b-cdn.net/cloud-drive/8.jpg
   - https://images-jm.b-cdn.net/cloud-drive/9.jpg
 releaseNotes: >-
-  Faster Documents: on a big drive, opening Documents could hold up the
-  whole app for up to a minute; it now lists in under a second. Setting
-  this up takes up to a minute once, the first time the app starts after
-  updating. Also
-  updated libraries (mail, spreadsheets, PDFs, the desktop and phone apps).
+  Phone photo backup works again on phones that stopped sending photos (it
+  could skip every photo without saying so); update the Android app too. If
+  it can't read your photos, Settings → Photo backup now says why. Photos has
+  a new Upload button for pictures and videos from your phone, WhatsApp
+  included. Tidier toolbars on phones in Mail, Notes and Photos: the main
+  buttons stay full size and the rest are under ⋯.
 path: ""
 defaultUsername: ""
 defaultPassword: ""
