@@ -2,7 +2,7 @@ manifestVersion: 1
 id: jordanm88-cloud-drive
 category: files
 name: Cloud Drive
-version: "0.2.56"
+version: "0.2.57"
 tagline: Private drive for your WebDAV and S3 storage
 icon: https://images-jm.b-cdn.net/cloud-drive/icon-512.png
 description: >-
@@ -28,12 +28,12 @@ gallery:
   - https://images-jm.b-cdn.net/cloud-drive/8.jpg
   - https://images-jm.b-cdn.net/cloud-drive/9.jpg
 releaseNotes: >-
-  Phone photo backup works again on phones that stopped sending photos (it
-  could skip every photo without saying so); update the Android app too. If
-  it can't read your photos, Settings → Photo backup now says why. Photos has
-  a new Upload button for pictures and videos from your phone, WhatsApp
-  included. Tidier toolbars on phones in Mail, Notes and Photos: the main
-  buttons stay full size and the rest are under ⋯.
+  Phone photo backup: update the Android app to this version. The backup fix
+  from 0.2.55 never reached the phone apps, so phones kept skipping their
+  photos. Photo dates: photos added with Upload in the Android app keep their
+  own names, and the date that's often in them (they were renamed to numbers
+  and dated the day they were uploaded), and backed-up photos with no date of
+  their own are dated when the phone says they were taken.
 path: ""
 defaultUsername: ""
 defaultPassword: ""
