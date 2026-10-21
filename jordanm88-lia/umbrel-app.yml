@@ -2,7 +2,7 @@ manifestVersion: 1
 id: jordanm88-lia
 category: files
 name: Lia
-version: "0.1.101"
+version: "0.1.102"
 tagline: Self-hosted insurance CRM for brokers and agents
 icon: https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-lia/icon.png
 description: >-
