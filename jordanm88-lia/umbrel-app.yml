@@ -1,12 +1,12 @@
 manifestVersion: 1
 id: jordanm88-lia
 category: files
-name: NodaLia
+name: Lia
 version: "0.1.101"
 tagline: Self-hosted insurance CRM for brokers and agents
 icon: https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-lia/icon.png
 description: >-
-  NodaLia is a comprehensive, self-hosted insurance management platform built for
+  Lia is a comprehensive, self-hosted insurance management platform built for
   brokers, agents, and small teams. Manage your entire book of business from
   a single, secure interface — no subscriptions, no data sharing.
 
@@ -43,17 +43,18 @@ description: >-
 
   The first account you register on first launch becomes the administrator.
 developer: Jordan Mitchell
-website: https://github.com/jordanm88/nodalia
+website: https://github.com/jordanm88/lia
 dependencies: []
-repo: https://github.com/jordanm88/nodalia
-support: https://github.com/jordanm88/nodalia/issues
+repo: https://github.com/jordanm88/lia
+support: https://github.com/jordanm88/lia/issues
 port: 5137
 gallery:
   - https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-lia/1.png
   - https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-lia/2.png
   - https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-lia/3.png
 releaseNotes: >-
-  A new NodaLia logo, with new app icons and favicons throughout.
+  NodaLia is Lia again, with a new Lia logo: the L topped with a node, on new app icons and
+  favicons throughout.
 path: ""
 defaultUsername: ""
 defaultPassword: ""
