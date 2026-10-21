@@ -2,11 +2,11 @@ manifestVersion: 1
 id: jordanm88-lia
 category: files
 name: Lia
-version: "0.1.99"
+version: "0.1.100"
 tagline: Self-hosted insurance CRM for brokers and agents
 icon: https://images-jm.b-cdn.net/lia/icon.png
 description: >-
-  Lia is a comprehensive, self-hosted insurance management platform built for
+  NodaLia is a comprehensive, self-hosted insurance management platform built for
   brokers, agents, and small teams. Manage your entire book of business from
   a single, secure interface — no subscriptions, no data sharing.
 
@@ -43,10 +43,10 @@ description: >-
 
   The first account you register on first launch becomes the administrator.
 developer: Jordan Mitchell
-website: https://github.com/jordanm88/lia
+website: https://github.com/jordanm88/nodalia
 dependencies: []
-repo: https://github.com/jordanm88/lia
-support: https://github.com/jordanm88/lia/issues
+repo: https://github.com/jordanm88/nodalia
+support: https://github.com/jordanm88/nodalia/issues
 port: 5137
 gallery:
   - https://images-jm.b-cdn.net/lia/1.jpg
