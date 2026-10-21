@@ -2,7 +2,7 @@ manifestVersion: 1
 id: jordanm88-cloud-drive
 category: files
 name: Cloud Drive
-version: "0.2.57"
+version: "0.2.58"
 tagline: Private drive for your WebDAV and S3 storage
 icon: https://images-jm.b-cdn.net/cloud-drive/icon-512.png
 description: >-
@@ -28,12 +28,12 @@ gallery:
   - https://images-jm.b-cdn.net/cloud-drive/8.jpg
   - https://images-jm.b-cdn.net/cloud-drive/9.jpg
 releaseNotes: >-
-  Phone photo backup: update the Android app to this version. The backup fix
-  from 0.2.55 never reached the phone apps, so phones kept skipping their
-  photos. Photo dates: photos added with Upload in the Android app keep their
-  own names, and the date that's often in them (they were renamed to numbers
-  and dated the day they were uploaded), and backed-up photos with no date of
-  their own are dated when the phone says they were taken.
+  Phone photo backup: individual photo upload errors no longer stall the backup
+  queue, and original stream fallbacks prevent scoped storage failures on newer
+  Android versions. Folder selection: users can now select which phone folders
+  (Camera, WhatsApp, Screenshots, etc.) to back up. Automatic library scanning:
+  photo folders are periodically rescanned in the background and can be triggered
+  manually in Admin → Jobs.
 path: ""
 defaultUsername: ""
 defaultPassword: ""
