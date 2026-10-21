@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   # Umbrel's own proxy. It publishes the manifest port (5137) on the host and forwards to the app
-  # container below. Lia is the only thing that owns that port.
+  # container below. NodaLia is the only thing that owns that port.
   app_proxy:
     environment:
       APP_HOST: jordanm88-lia_app_1
@@ -16,7 +16,7 @@ services:
     # installs are reproducible and an updated tag can't change what runs until this line changes.
     # To ship a new build: push the image, then update the tag + digest here and bump `version` in
     # umbrel-app.yml. (linux/amd64 only.)
-    image: ghcr.io/jordanm88/nodalia:v0.1.100
+    image: ghcr.io/jordanm88/nodalia:v0.1.100@sha256:a54fe5b6b6f45be0b07c683a97caa6c632d6adfc338a00a796c0121b4ba38468
     restart: on-failure
     stop_grace_period: 1m
     init: true

@@ -1,7 +1,7 @@
 manifestVersion: 1
 id: jordanm88-lia
 category: files
-name: Lia
+name: NodaLia
 version: "0.1.100"
 tagline: Self-hosted insurance CRM for brokers and agents
 icon: https://images-jm.b-cdn.net/lia/icon.png
@@ -53,9 +53,9 @@ gallery:
   - https://images-jm.b-cdn.net/lia/2.jpg
   - https://images-jm.b-cdn.net/lia/3.jpg
 releaseNotes: >-
-  - New Gangmasters (GLAA) compliance tab for recruitment clients. Your logo
-  now shows on the sign-in page, and the browser tab icon can use your logo
-  or a custom image. Licences no longer duplicate after a reinstall
+  Lia is now NodaLia. Security fixes: the IP allowlist can no longer be
+  bypassed with forged headers, sign-in limits can't be dodged behind some
+  proxies, and the activity log no longer keeps client details in plain text.
 path: ""
 defaultUsername: ""
 defaultPassword: ""
