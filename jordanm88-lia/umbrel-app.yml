@@ -2,9 +2,9 @@ manifestVersion: 1
 id: jordanm88-lia
 category: files
 name: NodaLia
-version: "0.1.100"
+version: "0.1.101"
 tagline: Self-hosted insurance CRM for brokers and agents
-icon: https://images-jm.b-cdn.net/lia/icon.png
+icon: https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-lia/icon.png
 description: >-
   NodaLia is a comprehensive, self-hosted insurance management platform built for
   brokers, agents, and small teams. Manage your entire book of business from
@@ -49,13 +49,11 @@ repo: https://github.com/jordanm88/nodalia
 support: https://github.com/jordanm88/nodalia/issues
 port: 5137
 gallery:
-  - https://images-jm.b-cdn.net/lia/1.jpg
-  - https://images-jm.b-cdn.net/lia/2.jpg
-  - https://images-jm.b-cdn.net/lia/3.jpg
+  - https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-lia/1.png
+  - https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-lia/2.png
+  - https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-lia/3.png
 releaseNotes: >-
-  Lia is now NodaLia. Security fixes: the IP allowlist can no longer be
-  bypassed with forged headers, sign-in limits can't be dodged behind some
-  proxies, and the activity log no longer keeps client details in plain text.
+  A new NodaLia logo, with new app icons and favicons throughout.
 path: ""
 defaultUsername: ""
 defaultPassword: ""
