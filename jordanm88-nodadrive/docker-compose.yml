@@ -8,7 +8,7 @@ services:
       PROXY_AUTH_ADD: "false"
 
   app:
-    image: ghcr.io/jordanm88/cloud-drive:0.2.60@sha256:3fe8a2c4840255910771ec7f5f6b8c30ebbd4062113a135c97a92137616242df
+    image: ghcr.io/jordanm88/cloud-drive:0.2.62@sha256:b82418184faded1d4fb944388edcd032940bbdce133d624480556f7d25b34964
     restart: on-failure
     stop_grace_period: 1m
     init: true

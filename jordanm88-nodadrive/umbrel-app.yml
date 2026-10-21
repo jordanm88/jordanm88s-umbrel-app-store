@@ -2,7 +2,7 @@ manifestVersion: 1
 id: jordanm88-nodadrive
 category: files
 name: NodaDrive
-version: "0.2.60"
+version: "0.2.62"
 tagline: Private drive for your WebDAV and S3 storage
 icon: https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-nodadrive/icon.png
 description: >-
@@ -32,12 +32,13 @@ gallery:
   - https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-nodadrive/gallery/8.jpg
   - https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-nodadrive/gallery/9.jpg
 releaseNotes: >-
-  Cloud Drive is now NodaDrive, with a new store listing. If Cloud Drive is
-  installed on this Umbrel, installing NodaDrive stops it and moves its data
-  across (database and encryption key), so everything is where you left it.
-  Then uninstall Cloud Drive: until you do, it keeps port 4444. Never uninstall
-  Cloud Drive first, because uninstalling deletes its data. The phone apps are
-  new apps called NodaDrive; the desktop apps update in place.
+  Network drives on Windows are steadier: big or slow copies no longer fail in
+  File Explorer (files are uploaded in the background and shown meanwhile,
+  carrying on after a restart), brief network drops are retried, names match
+  whatever their case, and a file the server refuses is kept in Downloads.
+  NodaDrive has a new mark throughout, and a name still set to "Cloud Drive"
+  now shows NodaDrive. Moving a folder on S3 storage no longer fails when it
+  holds an empty folder.
 path: ""
 defaultUsername: ""
 defaultPassword: ""
