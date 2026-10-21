@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+# NodaDrive was listed as "jordanm88-cloud-drive" (Cloud Drive) before the rename. If that app is installed on this
+# Umbrel, move its data (database, encryption key) into this one so nothing is lost. The old app is stopped first,
+# so the database isn't moved mid-write. The data is moved rather than copied (it can be many gigabytes); the old
+# app's folder is left empty with a note, and the old app can then be uninstalled. NodaDrive renames
+# cloud-drive.db to nodadrive.db when it starts (scripts/umbrel-start.mjs).
+set -euo pipefail
+
+OLD_ID="jordanm88-cloud-drive"
+OLD_DATA="$(dirname "${APP_DATA_DIR}")/${OLD_ID}/data"
+NEW_DATA="${APP_DATA_DIR}/data"
+
+[[ -f "${OLD_DATA}/app-secret" ]] || exit 0
+if [[ -n "$(find "${NEW_DATA}" -mindepth 1 -type f 2>/dev/null | head -n 1)" ]]; then
+  echo "NodaDrive: ${NEW_DATA} already holds data; not moving ${OLD_ID}'s."
+  exit 0
+fi
+
+echo "NodaDrive: moving data from ${OLD_ID}..."
+docker stop "${OLD_ID}_app_1" >/dev/null 2>&1 || true
+
+mkdir -p "${NEW_DATA}"
+# The database first, the key last: an interrupted move never leaves a key without its data.
+for f in "${OLD_DATA}"/cloud-drive.db* "${OLD_DATA}"/nodadrive.db*; do
+  [[ -e "$f" ]] && mv "$f" "${NEW_DATA}/"
+done
+find "${OLD_DATA}" -mindepth 1 -maxdepth 1 ! -name app-secret -exec mv -t "${NEW_DATA}/" {} +
+mv "${OLD_DATA}/app-secret" "${NEW_DATA}/app-secret"
+printf 'This app'"'"'s data moved to %s when NodaDrive was installed.\n' "${NEW_DATA}" > "${OLD_DATA}/MOVED-TO-NODADRIVE.txt"
+echo "NodaDrive: moved. Uninstall ${OLD_ID} (Cloud Drive) now: until you do, it keeps port 4444."

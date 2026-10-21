@@ -3,12 +3,12 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: jordanm88-cloud-drive_app_1
+      APP_HOST: jordanm88-nodadrive_app_1
       APP_PORT: 4444
       PROXY_AUTH_ADD: "false"
 
   app:
-    image: ghcr.io/jordanm88/cloud-drive:0.2.59
+    image: ghcr.io/jordanm88/nodadrive:0.2.60
     restart: on-failure
     stop_grace_period: 1m
     init: true
