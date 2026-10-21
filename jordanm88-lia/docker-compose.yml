@@ -7,7 +7,7 @@ services:
     environment:
       APP_HOST: jordanm88-lia_app_1
       APP_PORT: 5000
-      # Lia has its own login (the first account registered becomes the admin), so Umbrel's extra
+      # NodaLia has its own login (the first account registered becomes the admin), so Umbrel's extra
       # login wall in front of it is switched off. Remove this line to put it back.
       PROXY_AUTH_ADD: "false"
 
@@ -16,14 +16,14 @@ services:
     # installs are reproducible and an updated tag can't change what runs until this line changes.
     # To ship a new build: push the image, then update the tag + digest here and bump `version` in
     # umbrel-app.yml. (linux/amd64 only.)
-    image: ghcr.io/jordanm88/lia:v0.1.99
+    image: ghcr.io/jordanm88/nodalia:v0.1.100
     restart: on-failure
     stop_grace_period: 1m
     init: true
     environment:
       NODE_ENV: production
       PORT: "5000"
-      # Tells Lia it is running on plain-HTTP Umbrel (no HTTPS redirect, relaxed local origins).
+      # Tells NodaLia it is running on plain-HTTP Umbrel (no HTTPS redirect, relaxed local origins).
       UMBREL_MODE: "true"
       # Must match how you reach the app; port 5137 is the manifest port above.
       DOMAIN: http://${DEVICE_DOMAIN_NAME}:5137
