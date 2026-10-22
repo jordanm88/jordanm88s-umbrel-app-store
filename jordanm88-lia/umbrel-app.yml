@@ -2,7 +2,7 @@ manifestVersion: 1
 id: jordanm88-lia
 category: files
 name: Lia
-version: "0.1.103"
+version: "0.1.104"
 tagline: Self-hosted insurance CRM for brokers and agents
 icon: https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-lia/icon.png
 description: >-
@@ -53,8 +53,9 @@ gallery:
   - https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-lia/2.png
   - https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-lia/3.png
 releaseNotes: >-
-  Licence checks now go to the new cloud address, cloud.nodalist.tech, and fall back to the
-  previous one if it can't be reached. Licences work exactly as before.
+  Lia's licence check-ins now report its version and the address people open it at
+  (such as umbrel.local:5137), so the Nodalist Tech panel shows them against the
+  installation. The licence page says "1 year" rather than "1 years".
 path: ""
 defaultUsername: ""
 defaultPassword: ""
