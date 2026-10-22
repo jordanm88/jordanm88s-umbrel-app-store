@@ -8,7 +8,7 @@ services:
       PROXY_AUTH_ADD: "false"
 
   app:
-    image: ghcr.io/jordanm88/nodadrive:0.2.63@sha256:906a7df456e2d8495f7efeb87de98b4db8f8b919334078f823b4305be545d44d
+    image: ghcr.io/jordanm88/nodadrive:0.2.64@sha256:9fb09bce53b00bb360b053c4c4f20e245ea5d5ad7810aa8ea4bf76a993da5278
     restart: on-failure
     stop_grace_period: 1m
     init: true
