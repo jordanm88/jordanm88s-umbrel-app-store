@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+# NodaLia was listed as "jordanm88-lia-demo" before the rename. If that app is installed on this Umbrel,
+# copy its database and documents into this one so nothing is lost. The old app is stopped first,
+# so the database isn't copied mid-write, and its data is left exactly as it was: uninstall it
+# once NodaLia is working. The marker file tells exports.sh to keep the old app's encryption key.
+set -euo pipefail
+
+OLD_ID="jordanm88-lia-demo"
+OLD_DATA="$(dirname "${APP_DATA_DIR}")/${OLD_ID}/data"
+NEW_DATA="${APP_DATA_DIR}/data"
+
+[[ -f "${OLD_DATA}/db/local.db" ]] || exit 0
+if [[ -n "$(find "${NEW_DATA}" -type f 2>/dev/null | head -n 1)" ]]; then
+  echo "NodaLia (Demo): ${NEW_DATA} already holds data; not copying from ${OLD_ID}."
+  exit 0
+fi
+
+echo "NodaLia (Demo): copying data from ${OLD_ID}..."
+docker stop "${OLD_ID}_app_1" >/dev/null 2>&1 || true
+
+# Copy beside the destination and move into place once complete, the database folder (with the
+# marker) last, so a failed copy never leaves partial data behind a marker. The folders are moved
+# one by one rather than data/ as a whole, in case data/ is a link to relocated storage.
+mkdir -p "${NEW_DATA}"
+for dir in uploads db; do
+  rm -rf "${NEW_DATA}/${dir}.from-${OLD_ID}"
+  mkdir -p "${NEW_DATA}/${dir}.from-${OLD_ID}"
+  if [[ -d "${OLD_DATA}/${dir}" ]]; then cp -a "${OLD_DATA}/${dir}/." "${NEW_DATA}/${dir}.from-${OLD_ID}/"; fi
+done
+touch "${NEW_DATA}/db.from-${OLD_ID}/.from-${OLD_ID}"
+for dir in uploads db; do
+  rm -rf "${NEW_DATA:?}/${dir}"
+  mv "${NEW_DATA}/${dir}.from-${OLD_ID}" "${NEW_DATA}/${dir}"
+done
+echo "NodaLia (Demo): copied. Uninstall ${OLD_ID} once you've checked your data is here."

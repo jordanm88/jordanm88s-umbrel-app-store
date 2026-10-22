@@ -2,12 +2,12 @@ version: "3.7"
 
 services:
   # Umbrel's own proxy. It publishes the manifest port (5454) on the host and forwards to the app
-  # container below. Lia is the only thing that owns that port.
+  # container below. NodaLia is the only thing that owns that port.
   app_proxy:
     environment:
-      APP_HOST: jordanm88-lia-demo_app_1
+      APP_HOST: jordanm88-nodalia-demo_app_1
       APP_PORT: 8811
-      # Lia has its own login (the first account registered becomes the admin), so Umbrel's extra
+      # NodaLia has its own login (the first account registered becomes the admin), so Umbrel's extra
       # login wall in front of it is switched off. Remove this line to put it back.
       PROXY_AUTH_ADD: "false"
 
@@ -23,22 +23,31 @@ services:
     environment:
       NODE_ENV: development
       PORT: "8811"
-      # Tells Lia it is running on plain-HTTP Umbrel (no HTTPS redirect, relaxed local origins).
+      # Tells NodaLia it is running on plain-HTTP Umbrel (no HTTPS redirect, relaxed local origins).
       UMBREL_MODE: "true"
       # Must match how you reach the app; port 5454 is the manifest port above.
       DOMAIN: http://${DEVICE_DOMAIN_NAME}:5454
       # Per-install secrets derived from your Umbrel seed: nothing sensitive is stored in this file.
-      # ENCRYPTION_KEY protects data in the database, so it must never change for an existing install.
-      ENCRYPTION_KEY: ${APP_SEED}
-      LIA_APP_SEED: ${APP_SEED}
+      # The seed comes from exports.sh: this app's own, or for data copied from the old
+      # "jordanm88-lia-demo" listing (hooks/pre-install), that app's, so its encrypted data stays readable.
+      NODALIA_DATA_SEED: ${APP_NODALIA_DEMO_DATA_SEED}
+      NODALIA_OWN_SEED: ${APP_SEED}
+    # ENCRYPTION_KEY protects data in the database, so it must never change for an existing install.
     # SESSION_SECRET is derived from the same seed but with a different label, so the two secrets
     # are independent of each other. ($$ is compose's escape for a literal $.)
     command:
       - sh
       - -c
       - |
-        SESSION_SECRET="$$(printf 'lia-session:%s' "$$LIA_APP_SEED" | sha256sum | cut -d' ' -f1)"
-        export SESSION_SECRET
+        SEED="$${NODALIA_DATA_SEED:-$$NODALIA_OWN_SEED}"
+        if [ -f /app/data/.from-jordanm88-lia-demo ] && [ "$$SEED" = "$$NODALIA_OWN_SEED" ]; then
+          echo "This data was copied from the old demo app but its encryption key wasn't passed in; not starting, so nothing is written with the wrong key. Restart the app from the Umbrel dashboard." >&2
+          exit 1
+        fi
+        ENCRYPTION_KEY="$$SEED"
+        SESSION_SECRET="$$(printf 'nodalia-session:%s' "$$SEED" | sha256sum | cut -d' ' -f1)"
+        unset NODALIA_DATA_SEED NODALIA_OWN_SEED SEED
+        export ENCRYPTION_KEY SESSION_SECRET
         exec node dist/docker-start.mjs
     volumes:
       # SQLite database
