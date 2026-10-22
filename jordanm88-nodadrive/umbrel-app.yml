@@ -2,7 +2,7 @@ manifestVersion: 1
 id: jordanm88-nodadrive
 category: files
 name: NodaDrive
-version: "0.2.64"
+version: "0.2.65"
 tagline: Private drive for your WebDAV and S3 storage
 icon: https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-nodadrive/icon.png
 description: >-
@@ -32,10 +32,8 @@ gallery:
   - https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-nodadrive/gallery/8.jpg
   - https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-nodadrive/gallery/9.jpg
 releaseNotes: >-
-  NodaDrive's licence check-ins now report its version and the address people
-  open it at (such as umbrel.local:4444), so the Nodalist Tech panel shows them
-  against the installation. The licence page says "1 year" rather than
-  "1 years".
+  NodaDrive now says it's a Nodalist Tech app, at the foot of every page and on
+  the phone app's connect screen.
 path: ""
 defaultUsername: ""
 defaultPassword: ""
