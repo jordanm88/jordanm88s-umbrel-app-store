@@ -2,7 +2,7 @@ manifestVersion: 1
 id: jordanm88-lia
 category: files
 name: Lia
-version: "0.1.104"
+version: "0.1.105"
 tagline: Self-hosted insurance CRM for brokers and agents
 icon: https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-lia/icon.png
 description: >-
@@ -53,9 +53,8 @@ gallery:
   - https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-lia/2.png
   - https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-lia/3.png
 releaseNotes: >-
-  Lia's licence check-ins now report its version and the address people open it at
-  (such as umbrel.local:5137), so the Nodalist Tech panel shows them against the
-  installation. The licence page says "1 year" rather than "1 years".
+  Lia has a new mark: a contact card, made for a CRM. Lia now also says it's a
+  Nodalist Tech app, on the sign-in page and at the foot of every page.
 path: ""
 defaultUsername: ""
 defaultPassword: ""
