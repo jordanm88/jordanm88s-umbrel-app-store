@@ -2,7 +2,7 @@ manifestVersion: 1
 id: jordanm88-lia
 category: files
 name: Lia
-version: "0.1.102"
+version: "0.1.103"
 tagline: Self-hosted insurance CRM for brokers and agents
 icon: https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-lia/icon.png
 description: >-
@@ -53,8 +53,8 @@ gallery:
   - https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-lia/2.png
   - https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-lia/3.png
 releaseNotes: >-
-  NodaLia is Lia again, with a new Lia logo: the L topped with a node, on new app icons and
-  favicons throughout.
+  Licence checks now go to the new cloud address, cloud.nodalist.tech, and fall back to the
+  previous one if it can't be reached. Licences work exactly as before.
 path: ""
 defaultUsername: ""
 defaultPassword: ""
