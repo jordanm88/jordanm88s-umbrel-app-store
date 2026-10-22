@@ -2,7 +2,7 @@ manifestVersion: 1
 id: jordanm88-nodadrive
 category: files
 name: NodaDrive
-version: "0.2.62"
+version: "0.2.63"
 tagline: Private drive for your WebDAV and S3 storage
 icon: https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-nodadrive/icon.png
 description: >-
@@ -32,13 +32,12 @@ gallery:
   - https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-nodadrive/gallery/8.jpg
   - https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-nodadrive/gallery/9.jpg
 releaseNotes: >-
-  Network drives on Windows are steadier: big or slow copies no longer fail in
-  File Explorer (files are uploaded in the background and shown meanwhile,
-  carrying on after a restart), brief network drops are retried, names match
-  whatever their case, and a file the server refuses is kept in Downloads.
-  NodaDrive has a new mark throughout, and a name still set to "Cloud Drive"
-  now shows NodaDrive. Moving a folder on S3 storage no longer fails when it
-  holds an empty folder.
+  NodaDrive is now licensed through Nodalist Tech, like Lia: a new installation
+  starts a 7-day trial, and an admin can check or request a licence in Admin →
+  Licence. Without a valid licence NodaDrive turns read-only: everyone can still
+  sign in, open and download their files, but nothing can be added or changed.
+  On a server of its own, NodaDrive can now store files on that server's disk,
+  always keeping part of it free for the system.
 path: ""
 defaultUsername: ""
 defaultPassword: ""
