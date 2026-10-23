@@ -2,7 +2,7 @@ manifestVersion: 1
 id: jordanm88-nodalia
 category: files
 name: NodaLia
-version: "0.1.106"
+version: "0.1.107"
 tagline: Self-hosted insurance CRM for brokers and agents
 icon: https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-nodalia/icon.png
 description: >-
@@ -53,10 +53,12 @@ gallery:
   - https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-nodalia/2.png
   - https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-nodalia/3.png
 releaseNotes: >-
-  Lia is now NodaLia, under a new listing. Install NodaLia while Lia is still
-  installed: it stops Lia and copies its database and documents across, leaving
-  Lia's own data as it was. Sign in again, check your clients are there, then
-  uninstall Lia. Never uninstall Lia first: that deletes its data.
+  New app lock: set a 4-8 digit PIN and how long NodaLia can sit unused before
+  it locks (Security page). Admin logs now record every change, with who, when
+  and what changed. Uploaded files are now encrypted on disk; existing files
+  are encrypted automatically the first time this version starts. Also fixes
+  uploaded files being reachable without signing in, and other security
+  improvements. Android users need the 0.1.107 APK for notifications while locked.
 path: ""
 defaultUsername: ""
 defaultPassword: ""
