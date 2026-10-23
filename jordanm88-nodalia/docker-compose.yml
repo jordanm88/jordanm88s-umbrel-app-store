@@ -16,7 +16,7 @@ services:
     # installs are reproducible and an updated tag can't change what runs until this line changes.
     # To ship a new build: push the image, then update the tag + digest here and bump `version` in
     # umbrel-app.yml. (linux/amd64 only.)
-    image: ghcr.io/jordanm88/nodalia:v0.1.108@sha256:bb2555e1512e6e5ea90c8d93002de919aada1ad0a97a97e52678a92e7ac088bb
+    image: ghcr.io/jordanm88/nodalia:v0.1.109@sha256:89b53e4d99dbfecbedd512d00aec8fbe7d18fc079740f676a4aa1440f7750dce
     restart: on-failure
     stop_grace_period: 1m
     init: true
