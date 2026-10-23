@@ -2,7 +2,7 @@ manifestVersion: 1
 id: jordanm88-nodalia
 category: files
 name: NodaLia
-version: "0.1.107"
+version: "0.1.108"
 tagline: Self-hosted insurance CRM for brokers and agents
 icon: https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-nodalia/icon.png
 description: >-
@@ -53,12 +53,14 @@ gallery:
   - https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-nodalia/2.png
   - https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-nodalia/3.png
 releaseNotes: >-
-  New app lock: set a 4-8 digit PIN and how long NodaLia can sit unused before
-  it locks (Security page). Admin logs now record every change, with who, when
-  and what changed. Uploaded files are now encrypted on disk; existing files
-  are encrypted automatically the first time this version starts. Also fixes
-  uploaded files being reachable without signing in, and other security
-  improvements. Android users need the 0.1.107 APK for notifications while locked.
+  Security and backup update. Two-factor codes can only be used once, Admin logs
+  are kept when a user is deleted, Bunny.net storage uses encrypted (FTPS)
+  connections, and stored data is re-encrypted with a stronger key the first time
+  this version starts, older log entries included. Snapshots now include every
+  stored file and value and are checked before download and restore; make a
+  fresh snapshot after updating. The spreadsheet backup keeps every field. Once
+  this version has started, older versions can no longer read your data, so
+  don't roll back past it.
 path: ""
 defaultUsername: ""
 defaultPassword: ""
