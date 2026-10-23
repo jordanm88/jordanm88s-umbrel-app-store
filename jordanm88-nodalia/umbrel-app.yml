@@ -2,7 +2,7 @@ manifestVersion: 1
 id: jordanm88-nodalia
 category: files
 name: NodaLia
-version: "0.1.111"
+version: "0.1.112"
 tagline: Self-hosted insurance CRM for brokers and agents
 icon: https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-nodalia/icon.png
 description: >-
@@ -53,9 +53,8 @@ gallery:
   - https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-nodalia/2.png
   - https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-nodalia/3.png
 releaseNotes: >-
-  A fresh look for NodaLia's front door: the NodaLia mark gets a bold outline,
-  and the sign-in, first-run setup and app-lock screens and the footer use the
-  new Nodalist Tech style. Everything after sign-in works and looks as before.
+  The sign-in headline's highlight no longer cuts off the tails of letters such as
+  g and y on the line above.
 path: ""
 defaultUsername: ""
 defaultPassword: ""
