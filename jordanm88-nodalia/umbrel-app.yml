@@ -2,7 +2,7 @@ manifestVersion: 1
 id: jordanm88-nodalia
 category: files
 name: NodaLia
-version: "0.1.109"
+version: "0.1.110"
 tagline: Self-hosted insurance CRM for brokers and agents
 icon: https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-nodalia/icon.png
 description: >-
@@ -53,12 +53,10 @@ gallery:
   - https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-nodalia/2.png
   - https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-nodalia/3.png
 releaseNotes: >-
-  Tasks now stay within each team: they can only be given to people in your team,
-  its sub-teams and the Support Team, unless an admin turns on "Tasks across
-  teams" in Settings. Adding a client or lead for a company another team already
-  has now tells you which team and who to contact, and asks before going ahead.
-  Notes get a contents list, clickable to-dos, pinning, a formatting toolbar and
-  more, and personal notes now restore correctly from snapshots.
+  Claims, leads and automations now stay within each team too: handlers, owners,
+  automation task assignees and alert recipients must be in the record's team, its
+  sub-teams or the Support Team, unless an admin turns on "Assign work across
+  teams" in Settings (previously "Tasks across teams").
 path: ""
 defaultUsername: ""
 defaultPassword: ""
