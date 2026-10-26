@@ -1,0 +1,16 @@
+version: "3.7"
+services:
+  app_proxy:
+    environment:
+      APP_HOST: jordanm88-chromium_chromium_1
+      APP_PORT: "3000"
+  chromium:
+    image: linuxserver/chromium:version-6ae43f81@sha256:da269d40b655eb25ca0cd17c87f2e8e34b5b21f3e3eb14143746e40c62cb6951 # Docker image for the chromium browser
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/London
+      - CHROME_CLI=https://jordan-mitchell.co.uk/ # Set the default URL to my website
+    shm_size: 1gb # Allocate 1 GB of shared memory
+    volumes:
+      - ${APP_DATA_DIR}/config:/config # Mount the config directory for persistent data

@@ -1,0 +1,26 @@
+manifestVersion: 1
+id: jordanm88-chromium
+category: BigBearCasaOS
+name: chromium
+version: "version-6ae43f81"
+tagline: chromium
+description: >-
+  This Image contains a browser-accessible version of chromium. 
+releaseNotes: >-
+  This version includes various improvements and bug fixes.
+developer: linuxserver
+website: https://hub.docker.com/r/linuxserver/chromium
+dependencies: []
+repo: https://github.com/jordanm88/jordanm88s-umbrel-app-store
+support: https://github.com/jordanm88/jordanm88s-umbrel-app-store/issues
+port: 10022
+gallery:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/chromium.png
+submitter: jordanm88
+submission: https://github.com/jordanm88/jordanm88s-umbrel-app-store
