@@ -2,7 +2,7 @@ manifestVersion: 1
 id: jordanm88-nodadrive
 category: files
 name: NodaDrive
-version: "0.2.66"
+version: "0.2.67"
 tagline: Private drive for your WebDAV and S3 storage
 icon: https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-nodadrive/icon.png
 description: >-
