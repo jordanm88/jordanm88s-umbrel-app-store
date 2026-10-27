@@ -2,7 +2,7 @@ manifestVersion: 1
 id: jordanm88-nodadrive
 category: files
 name: NodaDrive
-version: "0.2.67"
+version: "0.2.68"
 tagline: Private drive for your WebDAV and S3 storage
 icon: https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-nodadrive/icon.png
 description: >-
@@ -11,10 +11,6 @@ description: >-
   database stay on your Umbrel. The first account created becomes the admin.
   Admins can also add folders on the Umbrel itself (Home, USB drives and
   network shares) as storage.
-
-
-  Moving from Cloud Drive ("jordanm88-cloud-drive")? Install NodaDrive first:
-  installing moves Cloud Drive's data across. Then uninstall Cloud Drive.
 developer: Jordan Mitchell
 website: https://github.com/jordanm88/nodadrive
 dependencies: []
@@ -32,7 +28,7 @@ gallery:
   - https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-nodadrive/gallery/8.jpg
   - https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-nodadrive/gallery/9.jpg
 releaseNotes: >-
-  Servers set up from a Nodalist Tech panel now show its announcements in the
+  Servers set up from the cloud panel now show its announcements in the
   bell. They're a kind of their own, so each person can choose where they
   appear in their notification settings.
 path: ""
