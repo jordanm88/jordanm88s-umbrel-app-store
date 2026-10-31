@@ -2,7 +2,7 @@ manifestVersion: 1
 id: jordanm88-nodalia
 category: files
 name: NodaLia
-version: "0.1.133"
+version: "0.1.134"
 tagline: Self-hosted insurance CRM for brokers and agents
 icon: https://raw.githubusercontent.com/jordanm88/jordanm88s-umbrel-app-store/main/jordanm88-nodalia/icon.png
 description: >-
